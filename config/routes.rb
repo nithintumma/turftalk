@@ -1,4 +1,11 @@
 Cs50::Application.routes.draw do
+  get "users/new"
+
+  match '/signup', :to =>'users#new'
+  get "pages/home"
+
+  get "pages/contanct"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
