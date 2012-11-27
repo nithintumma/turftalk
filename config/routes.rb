@@ -1,4 +1,7 @@
 Cs50::Application.routes.draw do
+  resources :users
+  get "pages/contact"
+
   get "users/new"
 
   match '/signup', :to =>'users#new'
