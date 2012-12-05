@@ -1,0 +1,5 @@
+<%= form_for current_user.memberships.
+                          build(:turf_id => @turf.id) do |f| %>
+  <div><%= f.hidden_field :turf_id %></div>
+  <div class="actions"><%= f.submit "Follow" %></div>
+<% end %>

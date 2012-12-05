@@ -1,0 +1,50 @@
+<div class="hero-unit" id = "turf-header">
+  <h1>Welcome to <strong><%= @turf.name %></strong>.</h1>
+  <br/>
+  <h2>Located in <strong> <%= @turf.location %> </strong> </h2>
+  <h2>This space is <strong> <%= @turf.description %> </strong> </h2>
+  <%= render 'follow_form' if signed_in? %>
+
+	<div class="stats">
+	  <table summary="Turf stats">
+	    <tr>
+	      <td>
+	      	<a href="<%= followers_turf_path(@turf) %>">	          
+	          <span id="followers" class="stat">
+	            <%= pluralize(@turf.followers.count, "follower") %>
+	          </span>
+	      </td>
+	    </tr>
+	  </table>
+	</div>
+
+
+</div>
+<div class="row-fluid">
+  <div class="span8 hero-unit pull-left post-chat">
+	<h1>Posts</h1>
+    <% if @turf.posts.any? %>
+      <h3>There are <%= @turf.posts.count %> posts</h3>
+  	  <div class = "post-container" , style = "overflow:scroll, height:100px">	
+      <ol class="posts">
+        <%= render @posts %>
+      </ol>
+      </div>
+    <%else %>
+      <h3><i>No Posts Yet</i></h3>
+    <% end %>	
+
+	<div class = "post-form">
+    	<%= render 'shared/post_form' %>
+	</div>
+  </div>
+  <div class="span4 hero-unit post-chat">
+	<h1>Chat</h1>		
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>	
+  </div>
+</div>

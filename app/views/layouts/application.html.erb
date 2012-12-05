@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>This is the title</title>
+    <title>TurfTalk</title>
     <%= csrf_meta_tag %>
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,15 +12,12 @@
     <%= stylesheet_link_tag 'custom', :media => 'screen' %>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <nav class="round">
-          <ul>
-            <li><%= link_to "Sign in", '#' %></li>
-          </ul>
-        </nav>
-      </header>
+    <div class="container-fluid">
+      <%= render 'layouts/header' %>
       <section class="round">
+        <% flash.each do |key, value| %>
+          <div class="flash <%= key %>"><%= value %></div>
+        <% end %>
         <%= yield %>
       </section>
     </div>

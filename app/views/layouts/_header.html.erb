@@ -1,0 +1,28 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+      <nav>
+        <ul class="nav pull-left">
+          <% if signed_in? %>
+          <% current_user = @user %>
+          <li><%= link_to "Home", '/users' %></li>
+          <li><%= link_to "Help", help_path %></li>
+          <li><%= link_to "New Turf", create_path %></li>
+          <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+          <% else %>
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "Help", help_path %></li>
+          <li><%= link_to "Sign in", signin_path %></li>
+          <li><%= link_to "Sign up", signup_path %></li>
+          <% end %>
+       </ul>
+       <ul class="nav pull-right">
+          <% if signed_in? %>
+          <% $name = "#{@current_user.firstname} #{@current_user.lastname}" %>
+          <li><%= link_to $name, profile_path %></li>
+          <% end %>
+       </ul>
+      </nav>
+    </div>
+  </div>
+</header>

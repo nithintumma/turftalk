@@ -1,2 +1,29 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+
+    <div class="homepage">
+      <div class="layer">
+      </div>
+    </div>
+
+<div class="center hero-unit">
+	<h1>Welcome to <strong>turftalk</strong>!</h1>
+		
+	<h2>
+		<br/>
+		Whaddup. 
+	</h2>
+</div>
+
+<div class="subsection" id="signin-signup" >
+	<div class="row-fluid">
+		<div class="span6 hero-unit pull-left" id ="signinsignup">
+			<%= render 'users/new' %>
+		</div>
+		<div class="span6 hero-unit pull-right" id ="signinsignup">
+			<%= render 'sessions/new' %>
+		</div>
+	</div>
+</div>
+
+
+

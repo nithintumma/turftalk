@@ -1,10 +1,43 @@
 Cs50::Application.routes.draw do
-  resources :users
+ 
+
+  get "sessions/new"
+
+  resources :users do
+    member do
+      get :following
+    end
+  end
+
+  resources :sessions, :only => [:new, :create, :destroy]
+  
+  resources :turfs do
+    member do
+      get :followers
+    end
+  end
+
+  resources :relationships, :only => [:create, :destroy]
+
+  resources :posts, :only => [:create, :destroy]
+
   get "pages/contact"
 
   get "users/new"
 
+  match '/view', :to =>'users#show'
   match '/signup', :to =>'users#new'
+  match '/signin',  :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
+  match '/help', :to => 'pages#help'
+  match '/profile', :to => 'users#profile'
+
+  root :to => 'pages#home'
+
+  get "turfs/new"
+  match '/create', :to =>'turfs#new'
+  match '/destroy', :to => 'turfs#destroy'
+
   get "pages/home"
 
   get "pages/contanct"

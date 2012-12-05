@@ -1,1 +1,25 @@
+
 <%= @user.firstname %>, <%= @user.email %>
+
+<div class="row-fluid">
+  <div class="span8 hero-unit pull-left">
+  	<h1>You</h1>
+  	<div class = "name_display">
+      <%= image_tag "jamessmall.jpg" %>
+  		<br/>
+  		<br/>
+  		First name: <strong><%= @user.firstname %></strong>
+  		<br/>
+  		Last name: <strong><%= @user.lastname %></strong>
+  		<br/>
+  		<br/>
+  		Email: <strong><%= @user.email %></strong>
+  	</div>
+  </div>
+  <div class="span4 hero-unit">
+	<h1>Recent</h1>		
+		<br/>
+  		<br/>
+  		Recent spaces include:
+  </div>
+</div>

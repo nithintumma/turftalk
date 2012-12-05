@@ -1,0 +1,10 @@
+<%= form_for @post do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <div><%= f.hidden_field :turf_id_value, :value => @turf.id %></div>
+  <div class="field">
+    <%= f.text_area :content, :placeholder => "Share something here!", :class => "post-input" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<%= @user.firstname %>, <%= @user.email %>
+
+<div class="row-fluid">
+  <div class="span4 hero-unit pull-left">
+		<h1>Join</h1>
+		<% Turf.all.each do |turf| %>
+	    <tr>
+	      <td><%= turf.name %></td>
+	      <td><%= link_to 'Join', turf_path(turf) %></td>
+	      <br/>
+	    </tr>
+	    <% end %>
+  </div>
+  <div class="span4 hero-unit">
+		<h1>Create</h1>
+		<br/><br/>
+		<%= render 'turfs/new' %>
+  </div>
+  <div class="span4 hero-unit pull-right">
+		<h1>Search</h1>
+		<form class="form-search">
+			<br/><br/>
+			<input type="text" class="input-medium search-query"><br/><br/>
+			<button type="submit" class="btn">Search</button>
+		</form>
+
+  </div>
+
+</div>

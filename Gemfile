@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
-
+gem 'gravatar_image_tag', '0.1.0'
 gem 'jquery-rails'
 
 group :development do
@@ -20,5 +20,11 @@ group :production do
 end
 
 group :assets do
-  gem 'coffee-rails'
+  gem 'less-rails'
+  gem 'therubyracer'
+  gem 'sass-rails', '~> 3.2.3'
+  gem 'bootstrap-sass', '2.1'
+#  gem 'twitter-bootstrap-rails'
+#  gem 'less-rails-bootstrap'
+#  gem 'coffee-rails'
 end

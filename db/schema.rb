@@ -10,7 +10,54 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121127084944) do
+ActiveRecord::Schema.define(:version => 20121204082751) do
+
+  create_table "memberships", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "turf_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "memberships", ["turf_id"], :name => "index_memberships_on_turf_id"
+  add_index "memberships", ["user_id"], :name => "index_memberships_on_user_id"
+
+  create_table "posts", :force => true do |t|
+    t.string   "content"
+    t.integer  "relationship_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.integer  "user_id"
+    t.integer  "turf_id"
+  end
+
+  add_index "posts", ["relationship_id", "created_at"], :name => "index_posts_on_relationship_id_and_created_at"
+
+  create_table "relationships", :force => true do |t|
+    t.integer  "follower_id"
+    t.integer  "followed_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "relationships", ["followed_id"], :name => "index_relationships_on_followed_id"
+  add_index "relationships", ["follower_id"], :name => "index_relationships_on_follower_id"
+
+  create_table "turfs", :force => true do |t|
+    t.string   "name"
+    t.string   "location"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "turves", :force => true do |t|
+    t.string   "name"
+    t.string   "location"
+    t.string   "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "firstname"
