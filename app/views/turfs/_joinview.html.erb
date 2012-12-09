@@ -1,0 +1,31 @@
+<% Turf.all.each do |turf| %>
+  <% if silent_in_range(turf) %> 
+    <% if !current_user.following?(turf) %>
+      <a class="btn btn-large join-button" href = <%=url_for turf_path(turf)%> >
+      <div class="left pull-left" style = "text-align:left">
+        <td> <div style = "font-size:110%;"><b><%= turf.name %></b></div></td> </br>
+        <td><i> (<%= turf.followers.count %> followers) </i></td>
+
+      </div>
+      
+      <div class = "right pull-right" style = "text-align:right">  
+        <%if turf.location.size < 35%>
+          <td><%= turf.location %></td> </br>
+        <% else %>
+          <td><%= turf.location.slice(0,35) + "..." %></td> </br>
+        <% end %>
+        <td><%= sprintf "%.2f", distance_to(turf)%> meters away</td>
+      </div>       
+      </a>
+      
+      <button type="button" class="btn btn-link" data-toggle="collapse" data-target=<%="#turf#{turf.id}"%>>
+        Description
+      </button>
+
+      <div id=<%="turf#{turf.id}"%> class="collapse"> <%=turf.description%> </div>
+
+      
+
+    <%end %>
+  <% end %>
+<% end %>

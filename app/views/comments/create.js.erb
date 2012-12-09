@@ -1,0 +1,3 @@
+$("#comments-list<%=@comment.post_id%>").append("<%= escape_javascript(render(@comment)) %>");
+$("#comment-count").html($(".comment-ind<%=@comment.post_id%>").length + " Comments");
+$("#comment_content").val("");

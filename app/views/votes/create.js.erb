@@ -1,0 +1,36 @@
+var post_id = <%= @id %>;
+var up_votes  =  parseInt($("#" +  post_id + "up-votes").html());
+var down_votes=  parseInt($("#" +  post_id + "down-votes").html());
+var up = <%= @up %>;
+var vote_dir = false;
+
+// if there was a prior vote,
+<% if @vote %>
+        vote_dir = <%= @vote.up %>;
+ 
+        // if the new vote is in the same direction do nothing
+        if (up == vote_dir){
+                // do nothing
+        }
+        // else update the count in both directions
+        else {
+                if (up == true) {
+                        $("#" +  post_id + "up-votes").html(up_votes + 1);
+                        $("#" +  post_id + "down-votes").html(down_votes - 1);
+                }
+                else {
+                        $("#" +  post_id + "up-votes").html(up_votes - 1);
+                        $("#" +  post_id + "down-votes").html(down_votes + 1); 
+                }
+        }
+<% else %>
+        // if there wasn't a prior vote, update in one direction
+        if (up == true){
+                $("#" +  post_id + "up-votes").html(up_votes + 1);
+        }
+        else {
+                $("#" +  post_id + "down-votes").html(down_votes + 1); 
+        }
+<% end %>
+
+               

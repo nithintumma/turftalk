@@ -10,7 +10,43 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121204082751) do
+ActiveRecord::Schema.define(:version => 20121207115928) do
+
+  create_table "chats", :force => true do |t|
+    t.string   "content"
+    t.integer  "relationship_id"
+    t.integer  "user_id"
+    t.integer  "turf_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "comments", :force => true do |t|
+    t.text     "content"
+    t.integer  "user_id"
+    t.integer  "post_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "comments", ["post_id", "user_id", "created_at"], :name => "index_comments_on_post_id_and_user_id_and_created_at"
+
+  create_table "downvotes", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "post_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "locations", :force => true do |t|
+    t.float    "longitude"
+    t.float    "latitude"
+    t.integer  "accuracy"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "user_id"
+    t.string   "address"
+  end
 
   create_table "memberships", :force => true do |t|
     t.integer  "user_id"
@@ -29,9 +65,12 @@ ActiveRecord::Schema.define(:version => 20121204082751) do
     t.datetime "updated_at",      :null => false
     t.integer  "user_id"
     t.integer  "turf_id"
+    t.integer  "ups"
+    t.integer  "downs"
   end
 
   add_index "posts", ["relationship_id", "created_at"], :name => "index_posts_on_relationship_id_and_created_at"
+  add_index "posts", ["user_id", "turf_id", "created_at"], :name => "index_posts_on_user_id_and_turf_id_and_created_at"
 
   create_table "relationships", :force => true do |t|
     t.integer  "follower_id"
@@ -49,6 +88,10 @@ ActiveRecord::Schema.define(:version => 20121204082751) do
     t.string   "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.string   "latitude"
+    t.string   "longitude"
+    t.string   "accuracy"
+    t.string   "address"
   end
 
   create_table "turves", :force => true do |t|
@@ -57,6 +100,13 @@ ActiveRecord::Schema.define(:version => 20121204082751) do
     t.string   "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "upvotes", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "post_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
@@ -70,5 +120,13 @@ ActiveRecord::Schema.define(:version => 20121204082751) do
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+
+  create_table "votes", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "post_id"
+    t.boolean  "up"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end

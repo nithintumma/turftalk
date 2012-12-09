@@ -1,0 +1,34 @@
+<% Turf.all.each do |turf| %>
+  <% if silent_in_range(turf) %> 
+    <% if current_user.following?(turf) %>
+    <div>
+      <a class="btn btn-large return-button" href = <%=url_for turf_path(turf)%> >
+      <div class="left pull-left" style = "text-align:left">
+        <td><b><div style = "font-size:130%;"><b><%= turf.name %></b></div></b></td> </br>
+        <td><i> (<%= turf.followers.count %> followers) </i></td>
+
+      </div>
+      
+      <div class = "right pull-right" style = "text-align:right">  
+        <%if turf.location.size < 25%>
+          <td><%= turf.location %></td> </br>
+        <% else %>
+          <td><%= turf.location.slice(0,25) + "..." %></td> </br>
+        <% end %>
+        <td><%= sprintf "%.2f", distance_to(turf)%> meters away</td>
+
+      </div>      
+      </a>
+
+      <div style = "display:inline-block;">
+      <%= form_for current_user.relationships.find_by_followed_id(turf),
+             :html => { :method => :delete } do |f| %>
+        <div class="actions" ><%= f.submit "Leave", :class=>"leave-button" %></div>
+      <% end %>
+      </div>
+
+    </div>
+
+    <%end %>
+  <% end %>
+<% end %>

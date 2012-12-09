@@ -1,29 +1,32 @@
-<%= @user.firstname %>, <%= @user.email %>
+<% if signed_in? == false%>
+  <script type="text/javascript">
+    window.location.href="/pages/home" // put your correct path in a string here
+  </script>
+<% end %>
 
-<div class="row-fluid">
-  <div class="span4 hero-unit pull-left">
-		<h1>Join</h1>
-		<% Turf.all.each do |turf| %>
-	    <tr>
-	      <td><%= turf.name %></td>
-	      <td><%= link_to 'Join', turf_path(turf) %></td>
-	      <br/>
-	    </tr>
-	    <% end %>
-  </div>
-  <div class="span4 hero-unit">
-		<h1>Create</h1>
-		<br/><br/>
-		<%= render 'turfs/new' %>
-  </div>
-  <div class="span4 hero-unit pull-right">
-		<h1>Search</h1>
-		<form class="form-search">
+<div class = "row-fluid centered" style="width:1500px;height:750px;">
+
+	<div class="span6" id = "left">
+	  <div class="hero-unit left userhome" id = "join" style = "overflow:auto;max-height:400px;">
+			<h1 class = "user-home-header">Join</h1>
+			<%= render 'turfs/joinview' %>		
+	  </div>
+	  <div class="hero-unit left userhome" id = "return">
+			<h1 class = "user-home-header">Return</h1>
+			<%= render 'turfs/returnview' %>	
+	  </div>
+	</div>
+
+	<div class="span6" id = "right">		
+	  	<div class="hero-unit userhome" id = "create">
+			<h1 class = "user-home-header">Create</h1>
 			<br/><br/>
-			<input type="text" class="input-medium search-query"><br/><br/>
-			<button type="submit" class="btn">Search</button>
-		</form>
+			<%= render 'turfs/new' %>
+	  	</div>
 
-  </div>
+	  	<div class="hero-unit userhome" id = "search" style="padding-bottom:0px;">
+			<%=render 'turfs/search'%>
+	  	</div>
+	</div>
 
 </div>

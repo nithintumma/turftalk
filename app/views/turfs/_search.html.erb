@@ -1,0 +1,22 @@
+<div style = "display:inline-block;">
+  <%= form_tag "/users", :method => :get, :remote => :true do %>
+    <p>
+      <%= text_field_tag :search, params[:search], :placeholder => "Search here", :class=>"search-field", :style => "font-size:130%; padding-top:15px;"%>
+      <%= submit_tag "Search", :name => nil, :class=>"btn search-button", :style => "display:inline-block;font-size:130%;height:42px;" %>
+  <% end %>
+
+
+  <div id = "search-results">
+  <%if params[:search] && defined? @results %>
+  	<h2>There are <%=@results.count%> results for your seach</h2>
+  <%end%>
+      	<%if params[:search] && defined? @results %>
+            <% @results.each do |turf| %>
+              <%if !turf.name.nil? %>
+              	 <%=render :partial => "turfs/searchview", :locals=>{:turf => turf}%>
+              <% end %>     
+    	  	  <% end %>  		
+    		<% end %>
+  </div>
+
+</div>

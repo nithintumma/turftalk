@@ -1,4 +1,4 @@
 <%= form_for current_user.relationships.find_by_followed_id(@turf),
              :html => { :method => :delete } do |f| %>
-  <div class="actions"><%= f.submit "Unfollow" %></div>
+  <div class="actions" style = "display:inline-block;margin:0; padding:0;"><%= f.submit "Leave", :class => "btn-large unfollow-button"%></div>
 <% end %>

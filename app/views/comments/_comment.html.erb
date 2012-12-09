@@ -1,0 +1,12 @@
+<div class = "comment-ind<%=@comment.post_id%>">
+<li>
+  <span class="content"><%= auto_link(comment.content, :html => {:target => "_blank" }) %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(comment.created_at) %> ago by <%= link_to comment.user.firstname, comment.user %>.
+  </span>
+</li>
+
+
+
+
+</div>

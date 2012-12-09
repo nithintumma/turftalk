@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<div id = "create-form">
 <%= form_for(@turf) do |f| %>
   <%= render 'shared/error_messages' %>
   <div class="field">
@@ -18,5 +19,6 @@
     <%= f.submit "Create Turf" %>
   </div>
 <% end %>
+</div>
 </html>
 

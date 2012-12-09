@@ -61,5 +61,14 @@ module Cs50
 
     #configure sensitive passwords to filter them
     config.filter_parameters += [:password]
+
+    config.assets.initialize_on_precompile = false
+    
+
+
+    config.assets.precompile = %w(screen.css logo.png application.js)
+
+
+
   end
 end

@@ -1,50 +1,76 @@
-<div class="hero-unit" id = "turf-header">
-  <h1>Welcome to <strong><%= @turf.name %></strong>.</h1>
-  <br/>
-  <h2>Located in <strong> <%= @turf.location %> </strong> </h2>
-  <h2>This space is <strong> <%= @turf.description %> </strong> </h2>
-  <%= render 'follow_form' if signed_in? %>
+<div id = "current_turf" data-turfid= "<%= @turf.id%>">
+  <table width="100%" style = "margin-bottom:50px;">
 
-	<div class="stats">
-	  <table summary="Turf stats">
-	    <tr>
-	      <td>
-	      	<a href="<%= followers_turf_path(@turf) %>">	          
-	          <span id="followers" class="stat">
-	            <%= pluralize(@turf.followers.count, "follower") %>
-	          </span>
-	      </td>
-	    </tr>
-	  </table>
-	</div>
+  <div class = "row">
+    <tr align="center">
 
-
-</div>
-<div class="row-fluid">
-  <div class="span8 hero-unit pull-left post-chat">
-	<h1>Posts</h1>
-    <% if @turf.posts.any? %>
-      <h3>There are <%= @turf.posts.count %> posts</h3>
-  	  <div class = "post-container" , style = "overflow:scroll, height:100px">	
-      <ol class="posts">
-        <%= render @posts %>
-      </ol>
-      </div>
-    <%else %>
-      <h3><i>No Posts Yet</i></h3>
-    <% end %>	
-
-	<div class = "post-form">
-    	<%= render 'shared/post_form' %>
-	</div>
+    <td>
+    <div class="span8 hero-unit pull-left" id = "turf-header">
+      <h1>Welcome to <strong><%= @turf.name %></strong>.</h1>
+      <br/>
+      <h2>
+      Located in <strong> <%= @turf.location %>.</strong>
+      This space is <strong> <%= @turf.description %>.</strong></br></h2>
+      <h2 style = "display:inline-block;margin-right:50px;"><a href = <%=followers_turf_path(@turf)%> > <%= pluralize(@turf.followers.count, "follower") %> </a></h2>
+      
+      <%= render 'follow_form' if signed_in? %>
+    </div>
+    </td>
+    </tr>
   </div>
-  <div class="span4 hero-unit post-chat">
-	<h1>Chat</h1>		
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>	
+  </table>
+
+  <div class = "row-fluid centered" style="width:1500px;height:750px;">
+    <div class="span8 hero-unit" id = "postunit" style = "max-height:900px;" >
+      <div class="row-fluid">
+        <div class="span3" style="margin-right:5px;margin-left:5px;">
+          <div class = "hero-unit post-form" style = "height:240px">        
+              <%= image_tag "jamessmall.jpg", :class => "img-polaroid"%>
+              <a href="/profile"><%=current_user.firstname%> <%=current_user.lastname%></a>
+              <% @temp = @post %>
+              <%= render 'shared/post_form' %>
+          </div>
+
+          <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@turf.latitude},#{@turf.longitude}&zoom=14&size=200x200&sensor=false&markers=color:red%7C#{@turf.latitude},#{@turf.longitude}", :class => "img-polaroid"%>
+
+        </div>
+        <div class="span9" id = "postview"  style="margin-right:5px;margin-left:5px;">
+          <% @post = @temp %>
+          <% if @turf.posts.any? %>
+            <h2 style = "text-align:left; margin-top:25px; margin-bottom:5px;"><b><%= @turf.posts.count %> posts</b></h2>
+            <div class = "post-container" , style = "overflow:scroll; height:800px">  
+              <ol class="posts">
+                <%= render @posts %>
+              </ol>
+            </div>
+          <%else %>
+            <div class = "post-container">
+              <h2><i>No posts Yet</i></h2>
+            </div>
+          <% end %>
+
+        </div>
+      </div>
+    </div>
+    <div class="span3 hero-unit" id = "chatunit" style = "max-height:560px;">
+      <h2 style = "text-align:left; margin-top:25px; margin-bottom:5px; padding-bottom:14px;border-bottom: 1px solid #F5D280;"><b>Chat</b></h2>
+      <% @temp = @chat %>
+      <% if @turf.chats.any? %>
+        <div class = "chat-container" style = "overflow:scroll; height:371px;">
+          <ol class="chats">
+            <%= render @chats.reverse %>
+          </ol>
+        </div>
+      <%else %>
+        <div class = "chat-container">
+          <h3><i>No Chats Yet</i></h3>
+        </div>
+      <% end %>
+
+      <div class = "chat-form">
+        <% @chat = @temp %>
+        <%= render 'shared/chat_form' %>
+      </div> 
+    </div>
   </div>
 </div>

@@ -1,38 +1,51 @@
 class PostsController < ApplicationController
   before_filter :authenticate, :setup
+  respond_to :html, :js
 
+  #shows a given post based on its parameters, comments, and new comment field
+  def show
+    @post = Post.find(params[:id])
+    @comments = @post.comments
+    @comment = Comment.new if signed_in?
+  end
+
+  #allows a new post based on parameters, given comments for a post, and new comments
   def new
     @post = Post.new(params[:post])
+    @comments = @post.comments
+    @comment = Comment.new if signed_in?
   end
 
+  #can be used to refresh posts
   def index
+    @posts = Post.where("turf_id = ? and created_at > ?", params[:turf_id], Time.at(params[:after].to_i + 1000))
+    respond_with(@posts)
   end
 
+  #creates and attempts to save a new post based on a user and a turf id value passed in
+  #from a turf form
   def create
     @user = current_user
-    logger.debug("Now printing user")
-    logger.debug(@user)
     @turf = Turf.find_by_id(params[:post][:turf_id_value])
-    logger.debug("Now printing turf")
-    logger.debug(@turf)
 
     @post = @turf.posts.build(:content => params[:post][:content])
     @post.user = current_user
+
     if @post.save
-      flash[:success] = "Post created!"
-      redirect_to(:back)
+      respond_with(@post)
+      flash[:success] = "Post created!"      
     else
-      flash[:failure] = "Post not created :("
-      redirect_to(:back)
+      flash[:error] = "Post not created :("
     end
   end
 
+  #can be used to destroy a post down the line
   def destroy
   end
 
   protected
+    #initializes the current turf and user based on params and current logged in user
     def setup      
-      @turf = Turf[params[:turf_id]] if params[:turf_id]
       @user = current_user
     end
 end

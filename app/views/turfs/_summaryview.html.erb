@@ -1,0 +1,14 @@
+<% Turf.all.each do |turf| %>
+  <% if silent_in_range(turf) %>    
+      <td><%= turf.name %></td>
+      <td><i> (<%= turf.followers.count %> followers) </i></td>
+      <% if !current_user.following?(turf) %>
+      	<td><%= link_to 'Join', turf_path(turf) %></td>
+      <% else %>
+      	<td><%= link_to 'Re-enter', turf_path(turf) %></td>
+      <% end %>
+      <td><%= sprintf "%.2f", distance_to(turf)%> meters away</td>
+      <br/>
+    
+  <% end %>
+<% end %>

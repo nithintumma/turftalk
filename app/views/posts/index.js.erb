@@ -1,0 +1,4 @@
+<% unless @posts.empty? %>
+$(".post-container").html("<%=escape_javascript(render(@posts))%>");
+$("#postview h2").html('<br>' + $('.post_ind').length+" Posts </br>");
+<% end %>

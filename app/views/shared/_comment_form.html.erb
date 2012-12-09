@@ -1,0 +1,10 @@
+<%= form_for @comment, :remote => true do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <div><%= f.hidden_field :post_id_value, :value => @post.id %></div>
+  <div class="field">
+    <%= f.text_area :content, :placeholder => "Comment something here!", :class => "comment-input" %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>

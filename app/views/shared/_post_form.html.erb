@@ -1,10 +1,10 @@
-<%= form_for @post do |f| %>
+<%= form_for @post, :remote => true do |f| %>
   <%= render 'shared/error_messages', :object => f.object %>
   <div><%= f.hidden_field :turf_id_value, :value => @turf.id %></div>
   <div class="field">
-    <%= f.text_area :content, :placeholder => "Share something here!", :class => "post-input" %>
+    <%= f.text_area :content, :placeholder => "Share a question, thought, or link here!", :class => "post-input" %>
   </div>
-  <div class="actions">
-    <%= f.submit "Submit" %>
+  <div class="actions" style ="float:right" >
+    <%= f.submit "Submit", :class=>"btn"  %>
   </div>
 <% end %>

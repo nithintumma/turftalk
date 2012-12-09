@@ -1,0 +1,19 @@
+<%= form_tag turfs_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+<% end %>
+
+<table summary="Search Results">
+  <tr>
+    <td class="main">
+      <h1><%= @title %></h1>
+          <% @results.each do |turf| %>
+          Turf name is <%= turf.name %>          
+          <br/>
+
+      <% end %>
+
+    </td>
+  </tr>
+</table>

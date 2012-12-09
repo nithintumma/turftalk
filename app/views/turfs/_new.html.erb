@@ -3,19 +3,17 @@
 <%= form_for(@turf) do |f| %>
   <%= render 'shared/error_messages' %>
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.text_field :name, :placeholder => "Name", :id=>"create-form" %>
+  </div>
+    <div class="field">
+    <%= f.text_field :location, :placeholder => "Location", :id=>"create-form" %>
   </div>
   <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
+    <%= f.text_field :description, :placeholder => "Description (optional)", :id=>"create-form"  %>
   </div>
-  <div class="field">
-    <%= f.label :location %><br />
-    <%= f.text_field :location %>
-  </div>
+
   <div class="actions">
-    <%= f.submit "Create Turf" %>
+    <%= f.submit "Create Turf", :class=>"btn btn-large btn-primary submit-button"  %>
   </div>
 <% end %>
 </html>

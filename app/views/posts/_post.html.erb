@@ -1,9 +1,63 @@
+<div class = "a_post" data-time= "<%= post.created_at%>">
 
-<li>
-  <span class="content"><%= post.content %></span>
+<li style = "min-height:70px;">
+  
+  <%-#  post.votes.where(:up => true).count - post.votes.where(:up => false).count  -%>
+  <div class = "pull-left" id = "updown" style = "padding-top:0px;">
+    <div id = <%="#{post.id}up-votes"%> ><%=post.votes.where(:up => true).count%> </div>
+    <%= link_to image_tag("upvote.png"), votes_path(:vote =>{:post_id => post.id, :up => true}), :method=> :get, :remote => :true %>
+    </br>
+    <div id = <%="#{post.id}down-votes"%> ><%=post.votes.where(:up => false).count%></div> <%= link_to image_tag("downvote.png"), votes_path(:vote =>{:post_id => post.id, :up => false}),:method => :get, :remote => :true %>
+  </div>
   <span class="timestamp">
-    Posted <%= time_ago_in_words(post.created_at) %> ago by <%= link_to post.user.firstname, post.user %>.
+    <%= link_to post.user.firstname, post.user, :style => "font-size: 150%;"%> posted (<%= time_ago_in_words(post.created_at) %> ago): 
   </span>
+  <span class="content" style="margin-left:123px;font-size: 150%;"><%= auto_link(post.content, :html => {:target => "_blank" }) %></span>
+
 </li>
 
 
+<div class = "post_ind">
+  <div class="accordion" id = <%="post#{post.id}"%> >
+  <div class="accordion-group">
+    <div class="accordion-heading">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent=<%="#post#{post.id}"%> href=<%="#collapsePost#{post.id}"%>>
+        <div id = "comment-count">
+          <%if post.comments.count == 0%>
+            No Comments
+          <%else%>
+              <%=post.comments.count%> Comments
+          <%end%>
+        </div>          
+
+        
+
+      </a>
+    </div>
+    <div id= <%="collapsePost#{post.id}"%> class = "accordion-body collapse">
+      <div class="accordion-inner">
+         <% if post.comments.any? %>
+            <div class = "comments comments_container" , style = "overflow:scroll; height:210px;"> 
+            <ol class="comments">
+              <div id = "comments-list<%=post.id%>">
+                <%= render post.comments.reverse %>
+              </div>
+              <% @post = post %>
+              <%= render "shared/comment_form" %>
+            </ol>
+            </div>
+          <%else %>      
+              <div id = "comments-list<%=post.id%>">
+              </div>      
+            <% @post = post %>
+          <%= render "shared/comment_form" %>
+          <% end %> 
+          
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>

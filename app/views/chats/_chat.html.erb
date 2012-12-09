@@ -1,0 +1,23 @@
+<div class = "a_chat" data-time= "<%= chat.created_at%>">
+
+
+<li style = "padding-bottom:50px;">
+  <div>
+	  <span class="content"><%= chat.user.firstname%>
+	  <span class="timestamp">
+	  	<i><%=time_ago_in_words(chat.created_at) %> ago</i>
+	  </span>
+  </div>
+
+  <div class = "pull-left" style = "margin-right:10px;">
+    <%= image_tag "jamesverysmall.jpg", :class => "img-polaroid"%>
+  </div>
+  
+  <div class = "pull-left" style = "display:inline-block">
+    <span><%=chat.content %></span>
+  </div>
+  
+
+</li>
+
+</div>

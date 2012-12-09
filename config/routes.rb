@@ -19,9 +19,16 @@ Cs50::Application.routes.draw do
 
   resources :relationships, :only => [:create, :destroy]
 
-  resources :posts, :only => [:create, :destroy]
+  resources :chats, :only => [:create, :destroy, :index]
+  resources :posts, :only => [:create, :destroy, :index]
+  resources :comments, :only => [:create, :destroy]
 
-  get "pages/contact"
+  resources :locations, :only => [:create]
+  #resources :votes, :only =>[:create]
+  match '/votes' => 'votes#create', :via => :get
+
+
+  get "pages/about"
 
   get "users/new"
 

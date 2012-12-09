@@ -1,28 +1,24 @@
-
+<% if signed_in?%>
+  <script type="text/javascript">
+    window.location.href="/users"  // put your correct path in a string here
+  </script>
+<% end %>
 
     <div class="homepage">
       <div class="layer">
       </div>
     </div>
 
-<div class="center hero-unit">
-	<h1>Welcome to <strong>turftalk</strong>!</h1>
-		
-	<h2>
-		<br/>
-		Whaddup. 
-	</h2>
+    
+
+	
+
+
+
+<div class=" hero-unit pull-right" id ="signinsignup" style = "padding-left:25px;margin-top:350px; margin-right:150px;width:300px;">
+	<%= render 'users/new' %>
 </div>
 
-<div class="subsection" id="signin-signup" >
-	<div class="row-fluid">
-		<div class="span6 hero-unit pull-left" id ="signinsignup">
-			<%= render 'users/new' %>
-		</div>
-		<div class="span6 hero-unit pull-right" id ="signinsignup">
-			<%= render 'sessions/new' %>
-		</div>
-	</div>
 </div>
 
 
