@@ -21,8 +21,8 @@
   <div class="accordion" id = <%="post#{post.id}"%> >
   <div class="accordion-group">
     <div class="accordion-heading">
-      <a class="accordion-toggle" data-toggle="collapse" data-parent=<%="#post#{post.id}"%> href=<%="#collapsePost#{post.id}"%>>
-        <div id = "comment-count">
+      <a class="accordion-toggle" data-toggle="collapse" data-parent=<%="#post#{post.id}"%> href="#collapsePost<%=post.id%>" >
+        <div id = "comment-count<%=post.id%>">
           <%if post.comments.count == 0%>
             No Comments
           <%else%>
@@ -34,7 +34,7 @@
 
       </a>
     </div>
-    <div id= <%="collapsePost#{post.id}"%> class = "accordion-body collapse">
+    <div id= "collapsePost<%=post.id%>" class = "accordion-body collapse">
       <div class="accordion-inner">
          <% if post.comments.any? %>
             <div class = "comments comments_container" , style = "overflow:scroll; height:210px;"> 
