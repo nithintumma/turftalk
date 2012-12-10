@@ -23,7 +23,7 @@
       <% @relationships.each do |current| %>
         <%@turf = Turf.find_by_id(current.followed_id) %>
         <%if !@turf.name.nil? %>
-          <%=render :partial => "turfs/searchview", :locals=>{:turf => @turf}%>
+          <%=render :partial => "turfs/summaryview"%>
         <% end %>     
 
       <% end %>  

@@ -8,7 +8,7 @@
       <%= image_tag "jamessmall.jpg" , :class => "img-polaroid" %>
 
       First name: <strong><%= @user.firstname %></strong>
-     
+      
       Last name: <strong><%= @user.lastname %></strong>
 
     </div>
@@ -23,6 +23,7 @@
       <% @relationships.each do |current| %>
         <%@turf = Turf.find_by_id(current.followed_id) %>
         <%if !@turf.name.nil? %>
+          <%=render :partial => "turfs/summaryview"%>
         <% end %>     
 
       <% end %>  

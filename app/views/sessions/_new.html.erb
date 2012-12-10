@@ -1,12 +1,14 @@
-<%= form_for(:session, :url => sessions_path) do |f| %>
-  <div class="field" style = "display:inline-block; margin-top:4px; width:10px'">
+<%= form_for(:session, :url => sessions_path, :html => { :class => "form-inline", :style => "width:600px;pull-right;margin-right:10px;"} ) do |f| %>
+  <div class="field" style = "display:inline-block; margin-top:4px;">
      <%= f.text_field :email, :placeholder => "Email", :style=>"width:200px;" %>
   </div>
   <div class="field"style = "display:inline-block; margin-top:4px;">
-     <%= f.password_field :password, :placeholder => "Password", :style=>"margin-left:10px;width:100px;", :class =>"text:focus" %>
+     <%= f.password_field :password, :placeholder => "Password", :style=>"margin-left:10px;width:75px;", :class =>"text:focus", :style=>"width:200px;" %>
   </div>
   <div class="actions"style = "display:inline-block;">
      <%= f.submit "Sign in", :class =>"btn" , :style => "margin-left:10px;margin-bottom:12px;height:27px;"%>
   </div>
 <% end %>
+
+
 

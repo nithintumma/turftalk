@@ -25,7 +25,7 @@
           <li class="divider-vertical"><%= link_to $name, profile_path %></li>
           <li class="divider-vertical"><%= link_to "Sign out", signout_path, :method => :delete %></li>
           <%else%>
-          <li class="divider-vertical"><%= render "sessions/new"%></li>
+            <td  style = "pull-left"><%= render "sessions/new"%></td>
           <% end %>
        </ul>
       </nav>
