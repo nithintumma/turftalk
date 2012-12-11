@@ -18,6 +18,8 @@ class SessionsController < ApplicationController
       # Sign the user in and redirect to the user's show page.
       sign_in user
       redirect_to '/users'
+      flash[:success] = "Welcome to turftalk! You may have to refresh this page to see turfs near you"
+
     end
   end
 
