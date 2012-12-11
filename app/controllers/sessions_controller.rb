@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
                              params[:session][:password])
     if user.nil?
       redirect_to root_path
-      flash[:error] = "Invalid email/password combination. We recently had to reset our database as we're still in constant development, so you may have to reset your account - we apologize for the inconvenience!"
+      flash[:error] = "Invalid email/password combination. We recently had to reset our database as we're still in constant development, so you may have to recreate your account - we apologize for the inconvenience!"
       @title = "Sign in"
       
     else
