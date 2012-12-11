@@ -1,20 +1,31 @@
 <div class = "a_post" data-time= "<%= post.created_at%>">
 
-<li style = "min-height:70px;">
+<div style = "min-height:70px;">
   
   <%-#  post.votes.where(:up => true).count - post.votes.where(:up => false).count  -%>
   <div class = "pull-left" id = "updown" style = "padding-top:0px;">
-    <div id = <%="#{post.id}up-votes"%> ><%=post.votes.where(:up => true).count%> </div>
-    <%= link_to image_tag("upvote.png"), votes_path(:vote =>{:post_id => post.id, :up => true}), :method=> :get, :remote => :true %>
+    <div id = <%="#{post.id}up-votes" %> style = "float:left;"><%=post.votes.where(:up => true).count%> </div>
+    <div style = "float:right;">
+      <%= link_to image_tag("upvote.png"), votes_path(:vote =>{:post_id => post.id, :up => true}), :method=> :get, :remote => :true%>
+    </div>
     </br>
-    <div id = <%="#{post.id}down-votes"%> ><%=post.votes.where(:up => false).count%></div> <%= link_to image_tag("downvote.png"), votes_path(:vote =>{:post_id => post.id, :up => false}),:method => :get, :remote => :true %>
+    </br>
+    <div id = <%="#{post.id}down-votes"%> style = "float:left;"><%=post.votes.where(:up => false).count%></div> 
+    <div style = "float:right;">
+      <%= link_to image_tag("downvote.png"), votes_path(:vote =>{:post_id => post.id, :up => false}),:method => :get, :remote => :true %>    
+    </div>
   </div>
-  <span class="timestamp">
+  <div class="timestamp">
     <%= link_to post.user.firstname, post.user, :style => "font-size: 150%;"%> posted (<%= time_ago_in_words(post.created_at) %> ago): 
-  </span>
-  <span class="content" style="margin-left:123px;font-size: 150%;"><%= auto_link(post.content, :html => {:target => "_blank" }) %></span>
+  </div>
+  <div class="content" style="margin-left:23px;font-size: 150%;">
+    <div class = "pull-left">
+      <%= image_tag "jamesverysmall.jpg", :class => "img-polaroid"%>
+    </div>
+    <%= auto_link(post.content, :html => {:target => "_blank" }) %>
+  </div>
 
-</li>
+</div>
 
 
 <div class = "post_ind">
