@@ -1,4 +1,5 @@
-o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"‚!{"dependency_digest"%aa46956028647b086dd5ba42b2aba2a5"pathname"/Library/Ruby/Gems/1.8/gems/twitter-bootstrap-rails-2.1.7/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tooltip.js"logical_path"+twitter/bootstrap/bootstrap-tooltip.js"source"N/* ===========================================================
+o: ActiveSupport::Cache::Entry	:@expires_in0:@compressedF:@value"‚!{"lengthiN"
+mtime"2012-12-07T01:22:25-05:00"pathname"/Library/Ruby/Gems/1.8/gems/twitter-bootstrap-rails-2.1.7/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tooltip.js"source"N/* ===========================================================
  * bootstrap-tooltip.js v2.2.1
  * http://twitter.github.com/bootstrap/javascript.html#tooltips
  * Inspired by the original jQuery.tipsy by Jason Frame
@@ -275,7 +276,6 @@
   }
 
 }(window.jQuery);
-"
-mtime"2012-12-07T01:22:25-05:00"content_type"application/javascript"
-class"ProcessedAsset"required_paths["/Library/Ruby/Gems/1.8/gems/twitter-bootstrap-rails-2.1.7/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tooltip.js"digest"%82b9dacbcd7c9b4f6a29bf79c0331aae"lengthiN"_version"%1b13569e9620782f423d4cd3ce931750"dependency_paths[{"
-mtime"2012-12-07T01:22:25-05:00"digest"%3965819028d6557badd0ac57c8f9f23c"	path"/Library/Ruby/Gems/1.8/gems/twitter-bootstrap-rails-2.1.7/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tooltip.js:@created_atf1355167698.9722569 9u
+"digest"%82b9dacbcd7c9b4f6a29bf79c0331aae"logical_path"+twitter/bootstrap/bootstrap-tooltip.js"
+class"ProcessedAsset"required_paths["/Library/Ruby/Gems/1.8/gems/twitter-bootstrap-rails-2.1.7/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tooltip.js"content_type"application/javascript"_version"%1b13569e9620782f423d4cd3ce931750"dependency_paths[{"
+mtime"2012-12-07T01:22:25-05:00"digest"%3965819028d6557badd0ac57c8f9f23c"	path"/Library/Ruby/Gems/1.8/gems/twitter-bootstrap-rails-2.1.7/vendor/assets/javascripts/twitter/bootstrap/bootstrap-tooltip.js"dependency_digest"%aa46956028647b086dd5ba42b2aba2a5:@created_atf1355256422.6097879 Ä
