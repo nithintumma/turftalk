@@ -49,8 +49,22 @@ class UsersController < ApplicationController
       redirect_to '/users'
     else
       @title = "Sign up"
-      render 'new'
+      redirect_to root_path, :user => @user
+
+      #we should definitely fix this long term - this should be in a partial, but i can't get it to work right there
+      initial_error = "Sorry, errors prohibited this user from being saved, including:"
+      errors = [initial_error]
+
+      if @user.errors.any?    
+        @user.errors.full_messages.each do |msg|
+          errors << msg
+        end
+        flash[:error] = errors.join("<br/>   - ").html_safe
+      end
+
     end
+
+
   end
   
   #relationship between a user "following" a turf (based on twitter models but will
