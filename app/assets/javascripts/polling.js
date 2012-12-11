@@ -1,8 +1,8 @@
 // once the document has been loaded, if we are a turf home page call the updatePosts and updateChats with a timer
 $(function() {
   if ($(".post-container").length > 0) {
-    setTimeout(updatePosts, 3000);
-        setTimeout(updateChats, 500);
+    setTimeout(updatePosts, 8000);
+        setTimeout(updateChats, 1000);
   }
 });
  
@@ -15,7 +15,7 @@ function updatePosts () {
         var after = "0";
         }
         $.getScript("/posts.js?turf_id=" + turf_id + "&after=" + after)
-        setTimeout(updatePosts, 2000);
+        setTimeout(updatePosts, 4000);
 }
  
 // updateChats sends an AJAX request to the server and evaluates a script on the Chat index, calls itself with timer
@@ -27,5 +27,5 @@ function updateChats() {
         var after = "0";
         }
         $.getScript("/chats.js?turf_id=" + turf_id + "&after=" + after)
-        setTimeout(updateChats, 10000);
+        setTimeout(updateChats, 20000);
 }

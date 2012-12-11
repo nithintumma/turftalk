@@ -35859,3 +35859,2873 @@ Processing by PagesController#home as */*
   Rendered layouts/_header.html.erb (107.8ms)
   Rendered layouts/_footer.html.erb (0.1ms)
 Completed 200 OK in 179ms (Views: 177.6ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Connecting to database specified by database.yml
+Started GET "/turfs/10" for 127.0.0.1 at Tue Dec 11 05:20:58 -0500 2012
+Processing by TurfsController#show as HTML
+  Parameters: {"id"=>"10"}
+Completed 404 Not Found in 193ms
+
+ActiveRecord::RecordNotFound (Couldn't find Turf with id=10):
+  app/controllers/turfs_controller.rb:10:in `show'
+
+
+Started GET "/" for 127.0.0.1 at Tue Dec 11 05:21:04 -0500 2012
+Processing by PagesController#home as HTML
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered users/_new.html.erb (8.4ms)
+  Rendered pages/home.html.erb within layouts/application (35.4ms)
+Compiled custom.css  (2239ms)  (pid 8504)
+  Rendered sessions/_new.html.erb (3.7ms)
+  Rendered layouts/_header.html.erb (9.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2523ms (Views: 2519.8ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/screen.css" for 127.0.0.1 at Tue Dec 11 05:21:07 -0500 2012
+Served asset /blueprint/screen.css - 404 Not Found (11ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/screen.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/assets/blueprint/print.css" for 127.0.0.1 at Tue Dec 11 05:21:07 -0500 2012
+Served asset /blueprint/print.css - 404 Not Found (192ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/print.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 05:21:07 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"21", "latitude"=>"42.3751721", "longitude"=>"-71.11769819999999"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 05:21:07 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered users/_new.html.erb (3.5ms)
+  Rendered pages/home.html.erb within layouts/application (6.0ms)
+  Rendered sessions/_new.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 103ms (Views: 100.6ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+Started GET "/pages/about" for 127.0.0.1 at Tue Dec 11 05:21:09 -0500 2012
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+  Rendered sessions/_new.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 182ms (Views: 179.8ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/screen.css" for 127.0.0.1 at Tue Dec 11 05:21:09 -0500 2012
+Served asset /blueprint/screen.css - 404 Not Found (24ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/screen.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 05:21:11 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"21", "latitude"=>"42.3751721", "longitude"=>"-71.11769819999999"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 05:21:11 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_new.html.erb (2.9ms)
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+  Rendered sessions/_new.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 195ms (Views: 192.6ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/print.css" for 127.0.0.1 at Tue Dec 11 05:21:11 -0500 2012
+Served asset /blueprint/print.css - 404 Not Found (10ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/print.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started POST "/sessions" for 127.0.0.1 at Tue Dec 11 05:21:16 -0500 2012
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"utdKC9zbYy8R3PdnJY1CRGaqzACeiZfcUNS0Sw6uTNg=", "session"=>{"email"=>"npatel@college.harvard.edu", "password"=>"[FILTERED]"}, "utf8"=>"✓", "commit"=>"Sign in"}
+Redirected to http://localhost:3000/users
+Completed 302 Found in 31ms (ActiveRecord: 0.9ms)
+Started GET "/users" for 127.0.0.1 at Tue Dec 11 05:21:16 -0500 2012
+Processing by UsersController#index as HTML
+  Rendered turfs/_joinview.html.erb (156.4ms)
+  Rendered turfs/_returnview.html.erb (55.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered turfs/_new.html.erb (3.7ms)
+  Rendered turfs/_search.html.erb (99.1ms)
+  Rendered users/index.html.erb within layouts/application (324.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 402ms (Views: 395.2ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/screen.css" for 127.0.0.1 at Tue Dec 11 05:21:16 -0500 2012
+Served asset /blueprint/screen.css - 404 Not Found (13ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/screen.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/assets/blueprint/print.css" for 127.0.0.1 at Tue Dec 11 05:21:17 -0500 2012
+Served asset /blueprint/print.css - 404 Not Found (21ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/print.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 05:21:17 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"21", "latitude"=>"42.3751721", "longitude"=>"-71.11769819999999"}}
+Completed 201 Created in 39ms (Views: 0.2ms | ActiveRecord: 3.9ms | Solr: 0.0ms)
+Started GET "/turfs/5" for 127.0.0.1 at Tue Dec 11 05:21:19 -0500 2012
+Processing by TurfsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered turfs/_unfollow.html.erb (4.6ms)
+  Rendered turfs/_follow_form.html.erb (8.3ms)
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered shared/_post_form.html.erb (5.5ms)
+  Rendered chats/_chat.html.erb (29.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_chat_form.html.erb (3.8ms)
+  Rendered turfs/show.html.erb within layouts/application (71.5ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 377ms (Views: 244.7ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/screen.css" for 127.0.0.1 at Tue Dec 11 05:21:20 -0500 2012
+Served asset /blueprint/screen.css - 404 Not Found (23ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/screen.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/assets/jamesverysmall-fbd0483e119734f0c9f39fbc47888c0f.jpg" for 127.0.0.1 at Tue Dec 11 05:21:20 -0500 2012
+Served asset /jamesverysmall-fbd0483e119734f0c9f39fbc47888c0f.jpg - 200 OK (2ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-10%2005:50:32%20UTC&_=1355221281087" for 127.0.0.1 at Tue Dec 11 05:21:21 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-10 05:50:32 UTC", "turf_id"=>"5", "_"=>"1355221281087"}
+  Rendered chats/_chat.html.erb (8.6ms)
+  Rendered chats/index.js.erb (14.6ms)
+Completed 200 OK in 33ms (Views: 28.4ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 05:21:21 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"21", "latitude"=>"42.3751721", "longitude"=>"-71.11769819999999"}}
+Completed 201 Created in 9ms (Views: 0.2ms | ActiveRecord: 3.6ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/print.css" for 127.0.0.1 at Tue Dec 11 05:21:21 -0500 2012
+Served asset /blueprint/print.css - 404 Not Found (10ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/print.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/posts.js?turf_id=5&after=0&_=1355221283155" for 127.0.0.1 at Tue Dec 11 05:21:23 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"0", "turf_id"=>"5", "_"=>"1355221283155"}
+  Rendered posts/index.js.erb (1.9ms)
+Completed 200 OK in 32ms (Views: 16.9ms | ActiveRecord: 0.5ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=0&_=1355221285159" for 127.0.0.1 at Tue Dec 11 05:21:25 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"0", "turf_id"=>"5", "_"=>"1355221285159"}
+  Rendered posts/index.js.erb (1.3ms)
+Completed 200 OK in 107ms (Views: 2.3ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=0&_=1355221287162" for 127.0.0.1 at Tue Dec 11 05:21:27 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"0", "turf_id"=>"5", "_"=>"1355221287162"}
+  Rendered posts/index.js.erb (1.1ms)
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=0&_=1355221289165" for 127.0.0.1 at Tue Dec 11 05:21:29 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"0", "turf_id"=>"5", "_"=>"1355221289165"}
+  Rendered posts/index.js.erb (1.1ms)
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-10%2005:50:32%20UTC&_=1355221291089" for 127.0.0.1 at Tue Dec 11 05:21:31 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-10 05:50:32 UTC", "turf_id"=>"5", "_"=>"1355221291089"}
+  Rendered chats/_chat.html.erb (3.5ms)
+  Rendered chats/index.js.erb (6.3ms)
+Completed 200 OK in 11ms (Views: 6.8ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=0&_=1355221291166" for 127.0.0.1 at Tue Dec 11 05:21:31 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"0", "turf_id"=>"5", "_"=>"1355221291166"}
+  Rendered posts/index.js.erb (1.1ms)
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=0&_=1355221293168" for 127.0.0.1 at Tue Dec 11 05:21:33 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"0", "turf_id"=>"5", "_"=>"1355221293168"}
+  Rendered posts/index.js.erb (1.0ms)
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=0&_=1355221295170" for 127.0.0.1 at Tue Dec 11 05:21:35 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"0", "turf_id"=>"5", "_"=>"1355221295170"}
+  Rendered posts/index.js.erb (1.1ms)
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+Started POST "/posts" for 127.0.0.1 at Tue Dec 11 05:21:36 -0500 2012
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"utdKC9zbYy8R3PdnJY1CRGaqzACeiZfcUNS0Sw6uTNg=", "post"=>{"content"=>"Woah these posts are almost as awesome as this search engine: www.google.com", "turf_id_value"=>"5"}, "utf8"=>"✓", "commit"=>"Submit"}
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered shared/_comment_form.html.erb (6.4ms)
+  Rendered posts/_post.html.erb (66.5ms)
+  Rendered posts/create.js.erb (69.1ms)
+Completed 200 OK in 92ms (Views: 70.6ms | ActiveRecord: 5.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=undefined&_=1355221297172" for 127.0.0.1 at Tue Dec 11 05:21:37 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"undefined", "turf_id"=>"5", "_"=>"1355221297172"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (15.3ms)
+  Rendered posts/index.js.erb (31.7ms)
+Completed 200 OK in 39ms (Views: 31.5ms | ActiveRecord: 1.4ms | Solr: 0.0ms)
+Started GET "/votes?vote%5Bpost_id%5D=5&vote%5Bup%5D=true" for 127.0.0.1 at Tue Dec 11 05:21:38 -0500 2012
+Processing by VotesController#create as JS
+  Parameters: {"vote"=>{"post_id"=>"5", "up"=>"true"}}
+  Rendered votes/create.js.erb (0.6ms)
+Completed 200 OK in 29ms (Views: 8.0ms | ActiveRecord: 2.6ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221299175" for 127.0.0.1 at Tue Dec 11 05:21:39 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221299175"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (12.2ms)
+  Rendered posts/index.js.erb (15.3ms)
+Completed 200 OK in 20ms (Views: 15.4ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/votes?vote%5Bpost_id%5D=5&vote%5Bup%5D=false" for 127.0.0.1 at Tue Dec 11 05:21:39 -0500 2012
+Processing by VotesController#create as JS
+  Parameters: {"vote"=>{"post_id"=>"5", "up"=>"false"}}
+  Rendered votes/create.js.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 1.0ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-10%2005:50:32%20UTC&_=1355221301092" for 127.0.0.1 at Tue Dec 11 05:21:41 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-10 05:50:32 UTC", "turf_id"=>"5", "_"=>"1355221301092"}
+  Rendered chats/_chat.html.erb (3.6ms)
+  Rendered chats/index.js.erb (6.7ms)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221301177" for 127.0.0.1 at Tue Dec 11 05:21:41 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221301177"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (110.8ms)
+  Rendered posts/index.js.erb (113.8ms)
+Completed 200 OK in 118ms (Views: 113.7ms | ActiveRecord: 1.5ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221303180" for 127.0.0.1 at Tue Dec 11 05:21:43 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221303180"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (11.9ms)
+  Rendered posts/index.js.erb (15.4ms)
+Completed 200 OK in 20ms (Views: 15.6ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221305183" for 127.0.0.1 at Tue Dec 11 05:21:45 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221305183"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (12.4ms)
+  Rendered posts/index.js.erb (15.6ms)
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221307185" for 127.0.0.1 at Tue Dec 11 05:21:47 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221307185"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (12.3ms)
+  Rendered posts/index.js.erb (15.6ms)
+Completed 200 OK in 21ms (Views: 15.7ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221309187" for 127.0.0.1 at Tue Dec 11 05:21:49 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221309187"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (13.4ms)
+  Rendered posts/index.js.erb (16.4ms)
+Completed 200 OK in 21ms (Views: 16.3ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-10%2005:50:32%20UTC&_=1355221311343" for 127.0.0.1 at Tue Dec 11 05:21:51 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-10 05:50:32 UTC", "turf_id"=>"5", "_"=>"1355221311343"}
+  Rendered chats/_chat.html.erb (4.2ms)
+  Rendered chats/index.js.erb (7.0ms)
+Completed 200 OK in 12ms (Views: 7.5ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221311344" for 127.0.0.1 at Tue Dec 11 05:21:51 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221311344"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (13.6ms)
+  Rendered posts/index.js.erb (16.9ms)
+Completed 200 OK in 161ms (Views: 17.0ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221313346" for 127.0.0.1 at Tue Dec 11 05:21:53 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221313346"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (12.1ms)
+  Rendered posts/index.js.erb (15.3ms)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221315348" for 127.0.0.1 at Tue Dec 11 05:21:55 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221315348"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (12.6ms)
+  Rendered posts/index.js.erb (15.6ms)
+Completed 200 OK in 20ms (Views: 15.8ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started POST "/chats" for 127.0.0.1 at Tue Dec 11 05:21:55 -0500 2012
+Processing by ChatsController#create as JS
+  Parameters: {"authenticity_token"=>"utdKC9zbYy8R3PdnJY1CRGaqzACeiZfcUNS0Sw6uTNg=", "chat"=>{"content"=>"i'm a fan!", "turf_id_value"=>"5"}, "utf8"=>"✓", "commit"=>"Submit"}
+  Rendered chats/_chat.html.erb (4.2ms)
+  Rendered chats/create.js.erb (6.2ms)
+Completed 200 OK in 26ms (Views: 9.8ms | ActiveRecord: 3.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221317358" for 127.0.0.1 at Tue Dec 11 05:21:57 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221317358"}
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered shared/_comment_form.html.erb (3.1ms)
+  Rendered posts/_post.html.erb (13.7ms)
+  Rendered posts/index.js.erb (17.1ms)
+Completed 200 OK in 22ms (Views: 16.7ms | ActiveRecord: 1.5ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221319360" for 127.0.0.1 at Tue Dec 11 05:21:59 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221319360"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered posts/_post.html.erb (114.3ms)
+  Rendered posts/index.js.erb (117.3ms)
+Completed 200 OK in 122ms (Views: 117.4ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2010:21:55%20UTC&_=1355221321346" for 127.0.0.1 at Tue Dec 11 05:22:01 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:55 UTC", "turf_id"=>"5", "_"=>"1355221321346"}
+  Rendered chats/_chat.html.erb (13.7ms)
+  Rendered chats/index.js.erb (21.3ms)
+Completed 200 OK in 34ms (Views: 24.3ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221321362" for 127.0.0.1 at Tue Dec 11 05:22:01 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221321362"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (12.1ms)
+  Rendered posts/index.js.erb (15.2ms)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started POST "/chats" for 127.0.0.1 at Tue Dec 11 05:22:02 -0500 2012
+Processing by ChatsController#create as JS
+  Parameters: {"authenticity_token"=>"utdKC9zbYy8R3PdnJY1CRGaqzACeiZfcUNS0Sw6uTNg=", "chat"=>{"content"=>"can i like you guys on facebook?", "turf_id_value"=>"5"}, "utf8"=>"✓", "commit"=>"Submit"}
+  Rendered chats/_chat.html.erb (0.7ms)
+  Rendered chats/create.js.erb (1.5ms)
+Completed 200 OK in 33ms (Views: 5.0ms | ActiveRecord: 16.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221323365" for 127.0.0.1 at Tue Dec 11 05:22:03 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221323365"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (12.5ms)
+  Rendered posts/index.js.erb (15.7ms)
+Completed 200 OK in 20ms (Views: 15.8ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221325367" for 127.0.0.1 at Tue Dec 11 05:22:05 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221325367"}
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (11.9ms)
+  Rendered posts/index.js.erb (14.9ms)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221327368" for 127.0.0.1 at Tue Dec 11 05:22:07 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221327368"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (117.8ms)
+  Rendered posts/index.js.erb (120.8ms)
+Completed 200 OK in 125ms (Views: 120.8ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221329371" for 127.0.0.1 at Tue Dec 11 05:22:09 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221329371"}
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_comment_form.html.erb (3.3ms)
+  Rendered posts/_post.html.erb (22.8ms)
+  Rendered posts/index.js.erb (29.4ms)
+Completed 200 OK in 42ms (Views: 25.6ms | ActiveRecord: 5.1ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2010:22:02%20UTC&_=1355221331349" for 127.0.0.1 at Tue Dec 11 05:22:11 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:22:02 UTC", "turf_id"=>"5", "_"=>"1355221331349"}
+  Rendered chats/_chat.html.erb (21.8ms)
+  Rendered chats/index.js.erb (28.1ms)
+Completed 200 OK in 41ms (Views: 28.5ms | ActiveRecord: 0.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221331374" for 127.0.0.1 at Tue Dec 11 05:22:11 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221331374"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered posts/_post.html.erb (13.4ms)
+  Rendered posts/index.js.erb (16.8ms)
+Completed 200 OK in 32ms (Views: 16.8ms | ActiveRecord: 1.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221333378" for 127.0.0.1 at Tue Dec 11 05:22:13 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221333378"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (30.5ms)
+  Rendered posts/index.js.erb (40.1ms)
+Completed 200 OK in 45ms (Views: 37.5ms | ActiveRecord: 4.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221335381" for 127.0.0.1 at Tue Dec 11 05:22:15 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221335381"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (14.2ms)
+  Rendered posts/index.js.erb (17.5ms)
+Completed 200 OK in 22ms (Views: 17.1ms | ActiveRecord: 1.6ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221337383" for 127.0.0.1 at Tue Dec 11 05:22:17 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221337383"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered posts/_post.html.erb (12.7ms)
+  Rendered posts/index.js.erb (15.7ms)
+Completed 200 OK in 129ms (Views: 15.8ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221339386" for 127.0.0.1 at Tue Dec 11 05:22:19 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221339386"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (11.5ms)
+  Rendered posts/index.js.erb (14.7ms)
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 1.0ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2010:22:02%20UTC&_=1355221341351" for 127.0.0.1 at Tue Dec 11 05:22:21 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:22:02 UTC", "turf_id"=>"5", "_"=>"1355221341351"}
+  Rendered chats/_chat.html.erb (6.9ms)
+  Rendered chats/index.js.erb (11.0ms)
+Completed 200 OK in 16ms (Views: 11.7ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221341443" for 127.0.0.1 at Tue Dec 11 05:22:21 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221341443"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (12.3ms)
+  Rendered posts/index.js.erb (15.5ms)
+Completed 200 OK in 20ms (Views: 15.9ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221343445" for 127.0.0.1 at Tue Dec 11 05:22:23 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221343445"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (11.6ms)
+  Rendered posts/index.js.erb (14.7ms)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221345446" for 127.0.0.1 at Tue Dec 11 05:22:25 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221345446"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (118.6ms)
+  Rendered posts/index.js.erb (121.5ms)
+Completed 200 OK in 126ms (Views: 121.5ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221347449" for 127.0.0.1 at Tue Dec 11 05:22:27 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221347449"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (12.1ms)
+  Rendered posts/index.js.erb (15.1ms)
+Completed 200 OK in 20ms (Views: 15.1ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221349453" for 127.0.0.1 at Tue Dec 11 05:22:29 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221349453"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (11.9ms)
+  Rendered posts/index.js.erb (14.8ms)
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 1.4ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2010:22:02%20UTC&_=1355221351355" for 127.0.0.1 at Tue Dec 11 05:22:31 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:22:02 UTC", "turf_id"=>"5", "_"=>"1355221351355"}
+  Rendered chats/_chat.html.erb (5.7ms)
+  Rendered chats/index.js.erb (9.0ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221351455" for 127.0.0.1 at Tue Dec 11 05:22:31 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221351455"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (12.5ms)
+  Rendered posts/index.js.erb (15.6ms)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 1.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221353456" for 127.0.0.1 at Tue Dec 11 05:22:33 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221353456"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (11.7ms)
+  Rendered posts/index.js.erb (14.7ms)
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 1.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221355460" for 127.0.0.1 at Tue Dec 11 05:22:35 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221355460"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (12.6ms)
+  Rendered posts/index.js.erb (15.6ms)
+Completed 200 OK in 20ms (Views: 15.7ms | ActiveRecord: 1.1ms | Solr: 0.0ms)
+Started POST "/posts" for 127.0.0.1 at Tue Dec 11 05:22:36 -0500 2012
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"utdKC9zbYy8R3PdnJY1CRGaqzACeiZfcUNS0Sw6uTNg=", "post"=>{"content"=>"Have you guys seen this song? It should be the TurfTalk theme song ;) http://www.google.com/url?sa=t&rct=j&q=turf%20talk%20groupie&source=web&cd=1&cad=rja&ved=0CCwQtwIwAA&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DlM0cj3vOW8o&ei=UwnHUKqBF8Tb0QH1xIFo&usg=AFQjCNHcQrOFEpLigeJEVLdJpznlM-KjKg&bvm=bv.1354675689,d.dmQ", "turf_id_value"=>"5"}, "utf8"=>"✓", "commit"=>"Submit"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.6ms)
+  Rendered posts/_post.html.erb (28.6ms)
+  Rendered posts/create.js.erb (29.6ms)
+Completed 200 OK in 48ms (Views: 30.1ms | ActiveRecord: 6.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221357462" for 127.0.0.1 at Tue Dec 11 05:22:37 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221357462"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (25.2ms)
+  Rendered posts/index.js.erb (29.2ms)
+Completed 200 OK in 34ms (Views: 28.7ms | ActiveRecord: 1.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221359465" for 127.0.0.1 at Tue Dec 11 05:22:39 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221359465"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (23.3ms)
+  Rendered posts/index.js.erb (27.2ms)
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 1.5ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2010:22:02%20UTC&_=1355221361358" for 127.0.0.1 at Tue Dec 11 05:22:41 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:22:02 UTC", "turf_id"=>"5", "_"=>"1355221361358"}
+  Rendered chats/_chat.html.erb (6.4ms)
+  Rendered chats/index.js.erb (10.2ms)
+Completed 200 OK in 15ms (Views: 10.8ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221361587" for 127.0.0.1 at Tue Dec 11 05:22:41 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221361587"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered posts/_post.html.erb (31.4ms)
+  Rendered posts/index.js.erb (35.6ms)
+Completed 200 OK in 41ms (Views: 35.0ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221363660" for 127.0.0.1 at Tue Dec 11 05:22:43 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221363660"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (5.1ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (32.7ms)
+  Rendered posts/index.js.erb (37.0ms)
+Completed 200 OK in 55ms (Views: 36.4ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221365662" for 127.0.0.1 at Tue Dec 11 05:22:45 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221365662"}
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (104.6ms)
+  Rendered posts/_post.html.erb (125.3ms)
+  Rendered posts/index.js.erb (129.3ms)
+Completed 200 OK in 134ms (Views: 129.0ms | ActiveRecord: 1.5ms | Solr: 0.0ms)
+Started GET "/turfs/5" for 127.0.0.1 at Tue Dec 11 05:22:47 -0500 2012
+Processing by TurfsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered turfs/_unfollow.html.erb (4.1ms)
+  Rendered turfs/_follow_form.html.erb (7.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_post_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (6.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.9ms)
+  Rendered posts/_post.html.erb (34.9ms)
+  Rendered chats/_chat.html.erb (6.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_chat_form.html.erb (2.3ms)
+  Rendered turfs/show.html.erb within layouts/application (70.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 269ms (Views: 247.3ms | ActiveRecord: 3.8ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/screen.css" for 127.0.0.1 at Tue Dec 11 05:22:47 -0500 2012
+Served asset /blueprint/screen.css - 404 Not Found (19ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/screen.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/assets/grasshills.png" for 127.0.0.1 at Tue Dec 11 05:22:47 -0500 2012
+Served asset /grasshills.png - 200 OK (4ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 05:22:47 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"21", "latitude"=>"42.3751721", "longitude"=>"-71.11769819999999"}}
+Completed 201 Created in 17ms (Views: 0.2ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/print.css" for 127.0.0.1 at Tue Dec 11 05:22:47 -0500 2012
+Served asset /blueprint/print.css - 404 Not Found (10ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/print.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2010:22:02%20UTC&_=1355221368647" for 127.0.0.1 at Tue Dec 11 05:22:48 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:22:02 UTC", "turf_id"=>"5", "_"=>"1355221368647"}
+  Rendered chats/_chat.html.erb (7.0ms)
+  Rendered chats/index.js.erb (13.5ms)
+Completed 200 OK in 18ms (Views: 13.9ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221370548" for 127.0.0.1 at Tue Dec 11 05:22:50 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221370548"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (133.4ms)
+  Rendered posts/index.js.erb (137.0ms)
+Completed 200 OK in 141ms (Views: 136.5ms | ActiveRecord: 1.6ms | Solr: 0.0ms)
+Started GET "/votes?vote%5Bpost_id%5D=6&vote%5Bup%5D=true" for 127.0.0.1 at Tue Dec 11 05:22:52 -0500 2012
+Processing by VotesController#create as JS
+  Parameters: {"vote"=>{"post_id"=>"6", "up"=>"true"}}
+  Rendered votes/create.js.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 1.1ms | ActiveRecord: 4.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221372551" for 127.0.0.1 at Tue Dec 11 05:22:52 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221372551"}
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_comment_form.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (26.0ms)
+  Rendered posts/index.js.erb (29.9ms)
+Completed 200 OK in 35ms (Views: 29.3ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+Started GET "/votes?vote%5Bpost_id%5D=5&vote%5Bup%5D=true" for 127.0.0.1 at Tue Dec 11 05:22:53 -0500 2012
+Processing by VotesController#create as JS
+  Parameters: {"vote"=>{"post_id"=>"5", "up"=>"true"}}
+  Rendered votes/create.js.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 1.1ms | ActiveRecord: 3.5ms | Solr: 0.0ms)
+Started GET "/turfs/5" for 127.0.0.1 at Tue Dec 11 05:22:54 -0500 2012
+Processing by TurfsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered turfs/_unfollow.html.erb (3.6ms)
+  Rendered turfs/_follow_form.html.erb (5.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_post_form.html.erb (2.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (135.5ms)
+  Rendered chats/_chat.html.erb (6.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_chat_form.html.erb (2.4ms)
+  Rendered turfs/show.html.erb within layouts/application (164.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 253ms (Views: 235.4ms | ActiveRecord: 3.5ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/screen.css" for 127.0.0.1 at Tue Dec 11 05:22:54 -0500 2012
+Served asset /blueprint/screen.css - 404 Not Found (12ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/screen.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/assets/grasshills.png" for 127.0.0.1 at Tue Dec 11 05:22:54 -0500 2012
+Served asset /grasshills.png - 304 Not Modified (0ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 05:22:54 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"21", "latitude"=>"42.3751721", "longitude"=>"-71.11769819999999"}}
+Completed 201 Created in 8ms (Views: 0.3ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/print.css" for 127.0.0.1 at Tue Dec 11 05:22:56 -0500 2012
+Served asset /blueprint/print.css - 404 Not Found (19ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/print.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2010:22:02%20UTC&_=1355221376550" for 127.0.0.1 at Tue Dec 11 05:22:56 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:22:02 UTC", "turf_id"=>"5", "_"=>"1355221376550"}
+  Rendered chats/_chat.html.erb (10.4ms)
+  Rendered chats/index.js.erb (15.3ms)
+Completed 200 OK in 24ms (Views: 16.0ms | ActiveRecord: 3.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221377797" for 127.0.0.1 at Tue Dec 11 05:22:57 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221377797"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (23.5ms)
+  Rendered posts/index.js.erb (27.4ms)
+Completed 200 OK in 32ms (Views: 27.2ms | ActiveRecord: 1.5ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221379799" for 127.0.0.1 at Tue Dec 11 05:22:59 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221379799"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (137.0ms)
+  Rendered posts/index.js.erb (140.8ms)
+Completed 200 OK in 145ms (Views: 140.2ms | ActiveRecord: 1.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355221381802" for 127.0.0.1 at Tue Dec 11 05:23:01 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355221381802"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (27.4ms)
+  Rendered posts/index.js.erb (32.1ms)
+Completed 200 OK in 38ms (Views: 31.3ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started DELETE "/signout" for 127.0.0.1 at Tue Dec 11 05:23:03 -0500 2012
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"utdKC9zbYy8R3PdnJY1CRGaqzACeiZfcUNS0Sw6uTNg="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 05:23:03 -0500 2012
+Processing by PagesController#home as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_new.html.erb (3.0ms)
+  Rendered pages/home.html.erb within layouts/application (4.4ms)
+  Rendered sessions/_new.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 197ms (Views: 195.0ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/screen.css" for 127.0.0.1 at Tue Dec 11 05:23:03 -0500 2012
+Served asset /blueprint/screen.css - 404 Not Found (30ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/screen.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 05:23:03 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"21", "latitude"=>"42.3751721", "longitude"=>"-71.11769819999999"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms)
+Started GET "/assets/logobackground2.png" for 127.0.0.1 at Tue Dec 11 05:23:03 -0500 2012
+Served asset /logobackground2.png - 200 OK (27ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 05:23:03 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered users/_new.html.erb (9.3ms)
+  Rendered pages/home.html.erb within layouts/application (16.8ms)
+  Rendered sessions/_new.html.erb (2.5ms)
+  Rendered layouts/_header.html.erb (10.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 267ms (Views: 261.4ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/print.css" for 127.0.0.1 at Tue Dec 11 05:23:04 -0500 2012
+Served asset /blueprint/print.css - 404 Not Found (11ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/print.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 05:26:36 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"41", "latitude"=>"42.37513080000001", "longitude"=>"-71.1176059"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 05:26:36 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"41", "latitude"=>"42.37513080000001", "longitude"=>"-71.1176059"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 13ms (ActiveRecord: 0.2ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 05:26:36 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"41", "latitude"=>"42.37513080000001", "longitude"=>"-71.1176059"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 05:26:36 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_new.html.erb (7.6ms)
+  Rendered pages/home.html.erb within layouts/application (18.1ms)
+  Rendered sessions/_new.html.erb (5.5ms)
+  Rendered layouts/_header.html.erb (15.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 338ms (Views: 309.3ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 05:26:36 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_new.html.erb (3.0ms)
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+  Rendered sessions/_new.html.erb (2.3ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 89.8ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 05:26:36 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_new.html.erb (117.3ms)
+  Rendered pages/home.html.erb within layouts/application (122.9ms)
+  Rendered sessions/_new.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 201ms (Views: 196.9ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:45:33 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"46", "latitude"=>"42.3751428", "longitude"=>"-71.117673"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 283ms (ActiveRecord: 7.3ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:45:34 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"46", "latitude"=>"42.3751428", "longitude"=>"-71.117673"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.3ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:45:34 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"46", "latitude"=>"42.3751428", "longitude"=>"-71.117673"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 14:45:34 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (10.2ms)
+  Rendered users/_new.html.erb (79.7ms)
+  Rendered pages/home.html.erb within layouts/application (112.4ms)
+  Rendered sessions/_new.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 1421ms (Views: 1411.1ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 14:45:35 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_new.html.erb (5.0ms)
+  Rendered pages/home.html.erb within layouts/application (6.5ms)
+  Rendered sessions/_new.html.erb (1.9ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 205ms (Views: 202.7ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 14:45:35 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered users/_new.html.erb (2.9ms)
+  Rendered pages/home.html.erb within layouts/application (4.3ms)
+  Rendered sessions/_new.html.erb (9.3ms)
+  Rendered layouts/_header.html.erb (12.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 92ms (Views: 90.4ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:47:32 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"46", "latitude"=>"42.3750949", "longitude"=>"-71.117666"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:47:33 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"46", "latitude"=>"42.3750949", "longitude"=>"-71.117666"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:47:33 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"46", "latitude"=>"42.3750949", "longitude"=>"-71.117666"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 175ms (ActiveRecord: 0.3ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 14:47:33 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/_new.html.erb (3.6ms)
+  Rendered pages/home.html.erb within layouts/application (5.4ms)
+  Rendered sessions/_new.html.erb (1.9ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 101ms (Views: 98.2ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 14:47:33 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_new.html.erb (3.0ms)
+  Rendered pages/home.html.erb within layouts/application (4.4ms)
+  Rendered sessions/_new.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 211ms (Views: 209.0ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 14:47:33 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_new.html.erb (3.2ms)
+  Rendered pages/home.html.erb within layouts/application (5.4ms)
+  Rendered sessions/_new.html.erb (2.2ms)
+  Rendered layouts/_header.html.erb (124.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 224ms (Views: 221.2ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:49:33 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"27", "latitude"=>"42.375078099999996", "longitude"=>"-71.11768099999999"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:49:33 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"27", "latitude"=>"42.375078099999996", "longitude"=>"-71.11768099999999"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:49:33 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"27", "latitude"=>"42.375078099999996", "longitude"=>"-71.11768099999999"}}
+Redirected to http://localhost:3000/
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 14:49:33 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_new.html.erb (3.3ms)
+  Rendered pages/home.html.erb within layouts/application (5.2ms)
+  Rendered sessions/_new.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 90ms (Views: 84.8ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 14:49:33 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_new.html.erb (3.1ms)
+  Rendered pages/home.html.erb within layouts/application (4.6ms)
+  Rendered sessions/_new.html.erb (1.9ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 243ms (Views: 240.8ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started GET "/" for 127.0.0.1 at Tue Dec 11 14:49:34 -0500 2012
+Processing by PagesController#home as */*
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/_new.html.erb (3.5ms)
+  Rendered pages/home.html.erb within layouts/application (5.3ms)
+  Rendered sessions/_new.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 222ms (Views: 220.2ms | ActiveRecord: 0.2ms | Solr: 0.0ms)
+Started POST "/sessions" for 127.0.0.1 at Tue Dec 11 14:49:58 -0500 2012
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"utdKC9zbYy8R3PdnJY1CRGaqzACeiZfcUNS0Sw6uTNg=", "session"=>{"email"=>"npatel@college.harvard.edu", "password"=>"[FILTERED]"}, "utf8"=>"✓", "commit"=>"Sign in"}
+Redirected to http://localhost:3000/users
+Completed 302 Found in 9ms (ActiveRecord: 0.7ms)
+Started GET "/users" for 127.0.0.1 at Tue Dec 11 14:49:58 -0500 2012
+Processing by UsersController#index as HTML
+  Rendered turfs/_joinview.html.erb (29.2ms)
+  Rendered turfs/_returnview.html.erb (167.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered turfs/_new.html.erb (2.2ms)
+  Rendered turfs/_search.html.erb (1.0ms)
+  Rendered users/index.html.erb within layouts/application (202.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 294ms (Views: 287.8ms | ActiveRecord: 2.9ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/screen.css" for 127.0.0.1 at Tue Dec 11 14:49:59 -0500 2012
+Served asset /blueprint/screen.css - 404 Not Found (49ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/screen.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/assets/grasshills.png" for 127.0.0.1 at Tue Dec 11 14:49:59 -0500 2012
+Served asset /grasshills.png - 304 Not Modified (0ms)
+Started GET "/assets/blueprint/print.css" for 127.0.0.1 at Tue Dec 11 14:49:59 -0500 2012
+Served asset /blueprint/print.css - 404 Not Found (289ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/print.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:49:59 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"27", "latitude"=>"42.375078099999996", "longitude"=>"-71.11768099999999"}}
+Completed 201 Created in 47ms (Views: 0.2ms | ActiveRecord: 35.8ms | Solr: 0.0ms)
+Started GET "/turfs/5" for 127.0.0.1 at Tue Dec 11 14:50:02 -0500 2012
+Processing by TurfsController#show as HTML
+  Parameters: {"id"=>"5"}
+  Rendered turfs/_unfollow.html.erb (15.3ms)
+  Rendered turfs/_follow_form.html.erb (17.8ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_post_form.html.erb (3.8ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_comment_form.html.erb (3.3ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered posts/_post.html.erb (35.5ms)
+  Rendered chats/_chat.html.erb (12.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_chat_form.html.erb (3.0ms)
+  Rendered turfs/show.html.erb within layouts/application (89.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 327ms (Views: 299.1ms | ActiveRecord: 4.9ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/screen.css" for 127.0.0.1 at Tue Dec 11 14:50:03 -0500 2012
+Served asset /blueprint/screen.css - 404 Not Found (38ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/screen.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/assets/grasshills.png" for 127.0.0.1 at Tue Dec 11 14:50:03 -0500 2012
+Served asset /grasshills.png - 304 Not Modified (0ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:50:03 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"27", "latitude"=>"42.375078099999996", "longitude"=>"-71.11768099999999"}}
+Completed 201 Created in 15ms (Views: 0.3ms | ActiveRecord: 2.5ms | Solr: 0.0ms)
+Started GET "/assets/blueprint/print.css" for 127.0.0.1 at Tue Dec 11 14:50:03 -0500 2012
+Served asset /blueprint/print.css - 404 Not Found (15ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/blueprint/print.css"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2010:22:02%20UTC&_=1355255404444" for 127.0.0.1 at Tue Dec 11 14:50:04 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:22:02 UTC", "turf_id"=>"5", "_"=>"1355255404444"}
+  Rendered chats/_chat.html.erb (6.6ms)
+  Rendered chats/index.js.erb (9.9ms)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255406297" for 127.0.0.1 at Tue Dec 11 14:50:06 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255406297"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (208.2ms)
+  Rendered posts/_post.html.erb (245.9ms)
+  Rendered posts/index.js.erb (250.3ms)
+Completed 200 OK in 266ms (Views: 258.4ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255408315" for 127.0.0.1 at Tue Dec 11 14:50:08 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255408315"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (5.0ms)
+  Rendered posts/_post.html.erb (52.2ms)
+  Rendered posts/index.js.erb (62.7ms)
+Completed 200 OK in 71ms (Views: 61.4ms | ActiveRecord: 2.5ms | Solr: 0.0ms)
+Started POST "/chats" for 127.0.0.1 at Tue Dec 11 14:50:10 -0500 2012
+Processing by ChatsController#create as JS
+  Parameters: {"authenticity_token"=>"utdKC9zbYy8R3PdnJY1CRGaqzACeiZfcUNS0Sw6uTNg=", "chat"=>{"content"=>"sweet", "turf_id_value"=>"5"}, "utf8"=>"✓", "commit"=>"Submit"}
+  Rendered chats/_chat.html.erb (5.4ms)
+  Rendered chats/create.js.erb (9.8ms)
+Completed 200 OK in 60ms (Views: 15.2ms | ActiveRecord: 3.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255410321" for 127.0.0.1 at Tue Dec 11 14:50:10 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255410321"}
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_comment_form.html.erb (4.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (7.6ms)
+  Rendered posts/_post.html.erb (45.4ms)
+  Rendered posts/index.js.erb (55.4ms)
+Completed 200 OK in 66ms (Views: 54.9ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255412323" for 127.0.0.1 at Tue Dec 11 14:50:12 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255412323"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.4ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (130.4ms)
+  Rendered posts/_post.html.erb (161.3ms)
+  Rendered posts/index.js.erb (165.8ms)
+Completed 200 OK in 172ms (Views: 164.9ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255414324" for 127.0.0.1 at Tue Dec 11 14:50:14 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255414324"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (28.3ms)
+  Rendered posts/index.js.erb (38.8ms)
+Completed 200 OK in 49ms (Views: 36.8ms | ActiveRecord: 3.2ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:10%20UTC&_=1355255414547" for 127.0.0.1 at Tue Dec 11 14:50:14 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:10 UTC", "turf_id"=>"5", "_"=>"1355255414547"}
+  Rendered chats/_chat.html.erb (8.3ms)
+  Rendered chats/index.js.erb (14.8ms)
+Completed 200 OK in 19ms (Views: 15.2ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255416326" for 127.0.0.1 at Tue Dec 11 14:50:16 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255416326"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (28.5ms)
+  Rendered posts/index.js.erb (33.7ms)
+Completed 200 OK in 38ms (Views: 32.3ms | ActiveRecord: 2.6ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255418327" for 127.0.0.1 at Tue Dec 11 14:50:18 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255418327"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (9.8ms)
+  Rendered posts/_post.html.erb (408.9ms)
+  Rendered posts/index.js.erb (416.7ms)
+Completed 200 OK in 425ms (Views: 418.4ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+Started POST "/chats" for 127.0.0.1 at Tue Dec 11 14:50:18 -0500 2012
+Processing by ChatsController#create as JS
+  Parameters: {"authenticity_token"=>"utdKC9zbYy8R3PdnJY1CRGaqzACeiZfcUNS0Sw6uTNg=", "chat"=>{"content"=>"this stuff is pretty cool!", "turf_id_value"=>"5"}, "utf8"=>"✓", "commit"=>"Submit"}
+  Rendered chats/_chat.html.erb (0.9ms)
+  Rendered chats/create.js.erb (1.9ms)
+Completed 200 OK in 54ms (Views: 3.0ms | ActiveRecord: 12.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255420337" for 127.0.0.1 at Tue Dec 11 14:50:20 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255420337"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.9ms)
+  Rendered posts/_post.html.erb (32.3ms)
+  Rendered posts/index.js.erb (37.0ms)
+Completed 200 OK in 42ms (Views: 36.4ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255422340" for 127.0.0.1 at Tue Dec 11 14:50:22 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255422340"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (4.0ms)
+  Rendered posts/_post.html.erb (28.6ms)
+  Rendered posts/index.js.erb (32.7ms)
+Completed 200 OK in 38ms (Views: 32.6ms | ActiveRecord: 1.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255424342" for 127.0.0.1 at Tue Dec 11 14:50:24 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255424342"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.4ms)
+  Rendered posts/_post.html.erb (167.2ms)
+  Rendered posts/index.js.erb (171.9ms)
+Completed 200 OK in 177ms (Views: 170.6ms | ActiveRecord: 2.6ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255424696" for 127.0.0.1 at Tue Dec 11 14:50:24 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255424696"}
+  Rendered chats/_chat.html.erb (12.9ms)
+  Rendered chats/index.js.erb (19.2ms)
+Completed 200 OK in 24ms (Views: 17.9ms | ActiveRecord: 2.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255426344" for 127.0.0.1 at Tue Dec 11 14:50:26 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255426344"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (4.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (33.2ms)
+  Rendered posts/index.js.erb (37.3ms)
+Completed 200 OK in 43ms (Views: 37.1ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255428346" for 127.0.0.1 at Tue Dec 11 14:50:28 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255428346"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (28.3ms)
+  Rendered posts/index.js.erb (32.2ms)
+Completed 200 OK in 37ms (Views: 31.5ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255430350" for 127.0.0.1 at Tue Dec 11 14:50:30 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255430350"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (154.1ms)
+  Rendered posts/index.js.erb (159.1ms)
+Completed 200 OK in 164ms (Views: 158.2ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255432351" for 127.0.0.1 at Tue Dec 11 14:50:32 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255432351"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (25.2ms)
+  Rendered posts/index.js.erb (29.0ms)
+Completed 200 OK in 34ms (Views: 28.5ms | ActiveRecord: 1.7ms | Solr: 0.0ms)
+Started POST "/posts" for 127.0.0.1 at Tue Dec 11 14:50:34 -0500 2012
+Processing by PostsController#create as JS
+  Parameters: {"authenticity_token"=>"utdKC9zbYy8R3PdnJY1CRGaqzACeiZfcUNS0Sw6uTNg=", "post"=>{"content"=>"I'm not sure if i like posts or chats better, both are awesome!", "turf_id_value"=>"5"}, "utf8"=>"✓", "commit"=>"Submit"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (23.2ms)
+  Rendered posts/create.js.erb (24.3ms)
+Completed 200 OK in 42ms (Views: 25.0ms | ActiveRecord: 5.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255434428" for 127.0.0.1 at Tue Dec 11 14:50:34 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255434428"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_comment_form.html.erb (5.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (3.4ms)
+  Rendered posts/_post.html.erb (167.9ms)
+  Rendered posts/index.js.erb (172.1ms)
+Completed 200 OK in 183ms (Views: 170.8ms | ActiveRecord: 2.4ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255434886" for 127.0.0.1 at Tue Dec 11 14:50:34 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255434886"}
+  Rendered chats/_chat.html.erb (9.5ms)
+  Rendered chats/index.js.erb (13.4ms)
+Completed 200 OK in 18ms (Views: 13.7ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255436430" for 127.0.0.1 at Tue Dec 11 14:50:36 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255436430"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (3.0ms)
+  Rendered posts/_post.html.erb (38.6ms)
+  Rendered posts/index.js.erb (43.0ms)
+Completed 200 OK in 47ms (Views: 41.6ms | ActiveRecord: 2.5ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255438431" for 127.0.0.1 at Tue Dec 11 14:50:38 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255438431"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (147.0ms)
+  Rendered posts/index.js.erb (151.3ms)
+Completed 200 OK in 156ms (Views: 150.1ms | ActiveRecord: 2.3ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255440433" for 127.0.0.1 at Tue Dec 11 14:50:40 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255440433"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (56.4ms)
+  Rendered posts/index.js.erb (61.7ms)
+Completed 200 OK in 67ms (Views: 58.9ms | ActiveRecord: 4.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255442436" for 127.0.0.1 at Tue Dec 11 14:50:42 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255442436"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (36.2ms)
+  Rendered posts/index.js.erb (41.0ms)
+Completed 200 OK in 46ms (Views: 40.1ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255444439" for 127.0.0.1 at Tue Dec 11 14:50:44 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255444439"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (36.7ms)
+  Rendered posts/index.js.erb (145.7ms)
+Completed 200 OK in 150ms (Views: 144.8ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255444888" for 127.0.0.1 at Tue Dec 11 14:50:44 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255444888"}
+  Rendered chats/_chat.html.erb (8.8ms)
+  Rendered chats/index.js.erb (12.3ms)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255446443" for 127.0.0.1 at Tue Dec 11 14:50:46 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255446443"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (4.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (38.7ms)
+  Rendered posts/index.js.erb (43.2ms)
+Completed 200 OK in 48ms (Views: 42.4ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255448445" for 127.0.0.1 at Tue Dec 11 14:50:48 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255448445"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (140.8ms)
+  Rendered posts/index.js.erb (145.0ms)
+Completed 200 OK in 150ms (Views: 144.0ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255450448" for 127.0.0.1 at Tue Dec 11 14:50:50 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255450448"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (38.4ms)
+  Rendered posts/index.js.erb (42.5ms)
+Completed 200 OK in 47ms (Views: 41.6ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255452451" for 127.0.0.1 at Tue Dec 11 14:50:52 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255452451"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (143.6ms)
+  Rendered posts/index.js.erb (148.0ms)
+Completed 200 OK in 153ms (Views: 147.1ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255454455" for 127.0.0.1 at Tue Dec 11 14:50:54 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255454455"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered shared/_comment_form.html.erb (3.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (39.9ms)
+  Rendered posts/index.js.erb (44.7ms)
+Completed 200 OK in 50ms (Views: 43.4ms | ActiveRecord: 2.5ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255454890" for 127.0.0.1 at Tue Dec 11 14:50:54 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255454890"}
+  Rendered chats/_chat.html.erb (8.4ms)
+  Rendered chats/index.js.erb (12.1ms)
+Completed 200 OK in 17ms (Views: 12.6ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255456459" for 127.0.0.1 at Tue Dec 11 14:50:56 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255456459"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (110.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (145.8ms)
+  Rendered posts/index.js.erb (150.0ms)
+Completed 200 OK in 155ms (Views: 149.0ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255458463" for 127.0.0.1 at Tue Dec 11 14:50:58 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255458463"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (38.8ms)
+  Rendered posts/index.js.erb (43.3ms)
+Completed 200 OK in 49ms (Views: 42.5ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255460467" for 127.0.0.1 at Tue Dec 11 14:51:00 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255460467"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (38.4ms)
+  Rendered posts/index.js.erb (43.2ms)
+Completed 200 OK in 49ms (Views: 42.2ms | ActiveRecord: 2.3ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255462470" for 127.0.0.1 at Tue Dec 11 14:51:02 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255462470"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (37.8ms)
+  Rendered posts/index.js.erb (42.3ms)
+Completed 200 OK in 47ms (Views: 41.4ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255464473" for 127.0.0.1 at Tue Dec 11 14:51:04 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255464473"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered posts/_post.html.erb (44.1ms)
+  Rendered posts/index.js.erb (48.8ms)
+Completed 200 OK in 53ms (Views: 47.7ms | ActiveRecord: 2.4ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255464892" for 127.0.0.1 at Tue Dec 11 14:51:04 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255464892"}
+  Rendered chats/_chat.html.erb (8.7ms)
+  Rendered chats/index.js.erb (12.4ms)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255466476" for 127.0.0.1 at Tue Dec 11 14:51:06 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255466476"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (37.6ms)
+  Rendered posts/index.js.erb (42.5ms)
+Completed 200 OK in 47ms (Views: 41.5ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255468478" for 127.0.0.1 at Tue Dec 11 14:51:08 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255468478"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (36.4ms)
+  Rendered posts/index.js.erb (40.8ms)
+Completed 200 OK in 46ms (Views: 40.0ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255470481" for 127.0.0.1 at Tue Dec 11 14:51:10 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255470481"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (142.1ms)
+  Rendered posts/index.js.erb (146.3ms)
+Completed 200 OK in 152ms (Views: 145.4ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255472483" for 127.0.0.1 at Tue Dec 11 14:51:12 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255472483"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered posts/_post.html.erb (43.8ms)
+  Rendered posts/index.js.erb (48.4ms)
+Completed 200 OK in 53ms (Views: 47.2ms | ActiveRecord: 2.3ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255474485" for 127.0.0.1 at Tue Dec 11 14:51:14 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255474485"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (225.2ms)
+  Rendered posts/_post.html.erb (267.7ms)
+  Rendered posts/index.js.erb (284.9ms)
+Completed 200 OK in 290ms (Views: 280.4ms | ActiveRecord: 5.9ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255474895" for 127.0.0.1 at Tue Dec 11 14:51:14 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255474895"}
+  Rendered chats/_chat.html.erb (16.1ms)
+  Rendered chats/index.js.erb (20.7ms)
+Completed 200 OK in 31ms (Views: 21.0ms | ActiveRecord: 1.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255476486" for 127.0.0.1 at Tue Dec 11 14:51:16 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255476486"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (5.9ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.9ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (15.5ms)
+  Rendered posts/_post.html.erb (70.1ms)
+  Rendered posts/index.js.erb (75.3ms)
+Completed 200 OK in 83ms (Views: 74.1ms | ActiveRecord: 2.4ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255478489" for 127.0.0.1 at Tue Dec 11 14:51:18 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255478489"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (116.8ms)
+  Rendered posts/_post.html.erb (150.0ms)
+  Rendered posts/index.js.erb (154.3ms)
+Completed 200 OK in 159ms (Views: 153.5ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255480492" for 127.0.0.1 at Tue Dec 11 14:51:20 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255480492"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (35.9ms)
+  Rendered posts/index.js.erb (40.2ms)
+Completed 200 OK in 45ms (Views: 39.5ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255482494" for 127.0.0.1 at Tue Dec 11 14:51:22 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255482494"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (35.5ms)
+  Rendered posts/index.js.erb (39.8ms)
+Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255484497" for 127.0.0.1 at Tue Dec 11 14:51:24 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255484497"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (142.6ms)
+  Rendered posts/index.js.erb (147.0ms)
+Completed 200 OK in 152ms (Views: 146.1ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255484897" for 127.0.0.1 at Tue Dec 11 14:51:24 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255484897"}
+  Rendered chats/_chat.html.erb (8.5ms)
+  Rendered chats/index.js.erb (12.4ms)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255486500" for 127.0.0.1 at Tue Dec 11 14:51:26 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255486500"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (36.0ms)
+  Rendered posts/index.js.erb (41.7ms)
+Completed 200 OK in 47ms (Views: 40.4ms | ActiveRecord: 2.5ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255488502" for 127.0.0.1 at Tue Dec 11 14:51:28 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255488502"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (138.4ms)
+  Rendered posts/index.js.erb (142.7ms)
+Completed 200 OK in 147ms (Views: 141.6ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255490505" for 127.0.0.1 at Tue Dec 11 14:51:30 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255490505"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (36.8ms)
+  Rendered posts/index.js.erb (41.3ms)
+Completed 200 OK in 46ms (Views: 40.5ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255492507" for 127.0.0.1 at Tue Dec 11 14:51:32 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255492507"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (4.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered posts/_post.html.erb (155.1ms)
+  Rendered posts/index.js.erb (161.1ms)
+Completed 200 OK in 166ms (Views: 159.8ms | ActiveRecord: 2.5ms | Solr: 0.0ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:51:34 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"50", "latitude"=>"42.375102899999995", "longitude"=>"-71.1176583"}}
+Completed 201 Created in 33ms (Views: 3.5ms | ActiveRecord: 3.3ms | Solr: 0.0ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:51:34 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"50", "latitude"=>"42.375102899999995", "longitude"=>"-71.1176583"}}
+Completed 201 Created in 9ms (Views: 0.2ms | ActiveRecord: 2.6ms | Solr: 0.0ms)
+Started POST "/locations.json" for 127.0.0.1 at Tue Dec 11 14:51:34 -0500 2012
+Processing by LocationsController#create as JSON
+  Parameters: {"location"=>{"accuracy"=>"50", "latitude"=>"42.375102899999995", "longitude"=>"-71.1176583"}}
+Completed 201 Created in 22ms (Views: 0.3ms | ActiveRecord: 7.6ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255494509" for 127.0.0.1 at Tue Dec 11 14:51:34 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255494509"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.2ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (9.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (56.1ms)
+  Rendered posts/index.js.erb (62.4ms)
+Completed 200 OK in 69ms (Views: 60.1ms | ActiveRecord: 4.8ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255494898" for 127.0.0.1 at Tue Dec 11 14:51:34 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255494898"}
+  Rendered chats/_chat.html.erb (13.4ms)
+  Rendered chats/index.js.erb (22.1ms)
+Completed 200 OK in 29ms (Views: 19.1ms | ActiveRecord: 4.6ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255496512" for 127.0.0.1 at Tue Dec 11 14:51:36 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255496512"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (141.8ms)
+  Rendered posts/index.js.erb (146.2ms)
+Completed 200 OK in 152ms (Views: 145.1ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255498515" for 127.0.0.1 at Tue Dec 11 14:51:38 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255498515"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (35.5ms)
+  Rendered posts/index.js.erb (40.0ms)
+Completed 200 OK in 45ms (Views: 39.2ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255500518" for 127.0.0.1 at Tue Dec 11 14:51:40 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255500518"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (104.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (140.4ms)
+  Rendered posts/index.js.erb (145.5ms)
+Completed 200 OK in 151ms (Views: 144.7ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255502520" for 127.0.0.1 at Tue Dec 11 14:51:42 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255502520"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (37.4ms)
+  Rendered posts/index.js.erb (42.3ms)
+Completed 200 OK in 47ms (Views: 41.2ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255504523" for 127.0.0.1 at Tue Dec 11 14:51:44 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255504523"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (35.4ms)
+  Rendered posts/index.js.erb (39.8ms)
+Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255504899" for 127.0.0.1 at Tue Dec 11 14:51:44 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255504899"}
+  Rendered chats/_chat.html.erb (8.5ms)
+  Rendered chats/index.js.erb (12.1ms)
+Completed 200 OK in 120ms (Views: 12.6ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255506524" for 127.0.0.1 at Tue Dec 11 14:51:46 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255506524"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (37.2ms)
+  Rendered posts/index.js.erb (41.9ms)
+Completed 200 OK in 47ms (Views: 41.1ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255508527" for 127.0.0.1 at Tue Dec 11 14:51:48 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255508527"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (34.4ms)
+  Rendered posts/index.js.erb (38.6ms)
+Completed 200 OK in 44ms (Views: 37.9ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255510530" for 127.0.0.1 at Tue Dec 11 14:51:50 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255510530"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (35.9ms)
+  Rendered posts/index.js.erb (40.3ms)
+Completed 200 OK in 148ms (Views: 39.6ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255512531" for 127.0.0.1 at Tue Dec 11 14:51:52 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255512531"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_comment_form.html.erb (13.3ms)
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered shared/_comment_form.html.erb (3.5ms)
+  Rendered posts/_post.html.erb (76.8ms)
+  Rendered posts/index.js.erb (81.7ms)
+Completed 200 OK in 89ms (Views: 80.5ms | ActiveRecord: 2.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255514534" for 127.0.0.1 at Tue Dec 11 14:51:54 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255514534"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (138.7ms)
+  Rendered posts/index.js.erb (143.8ms)
+Completed 200 OK in 148ms (Views: 142.5ms | ActiveRecord: 2.5ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255514901" for 127.0.0.1 at Tue Dec 11 14:51:54 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255514901"}
+  Rendered chats/_chat.html.erb (10.5ms)
+  Rendered chats/index.js.erb (15.6ms)
+Completed 200 OK in 22ms (Views: 16.9ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255516719" for 127.0.0.1 at Tue Dec 11 14:51:56 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255516719"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.3ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (40.2ms)
+  Rendered posts/index.js.erb (46.4ms)
+Completed 200 OK in 53ms (Views: 44.0ms | ActiveRecord: 3.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255518743" for 127.0.0.1 at Tue Dec 11 14:51:58 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255518743"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (158.0ms)
+  Rendered posts/index.js.erb (163.4ms)
+Completed 200 OK in 168ms (Views: 162.2ms | ActiveRecord: 2.4ms | Solr: 0.0ms)
+Started GET "/votes?vote%5Bpost_id%5D=7&vote%5Bup%5D=true" for 127.0.0.1 at Tue Dec 11 14:51:59 -0500 2012
+Processing by VotesController#create as JS
+  Parameters: {"vote"=>{"post_id"=>"7", "up"=>"true"}}
+  Rendered votes/create.js.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 1.1ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255520745" for 127.0.0.1 at Tue Dec 11 14:52:00 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255520745"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (39.0ms)
+  Rendered posts/index.js.erb (43.5ms)
+Completed 200 OK in 49ms (Views: 42.6ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/votes?vote%5Bpost_id%5D=7&vote%5Bup%5D=false" for 127.0.0.1 at Tue Dec 11 14:52:01 -0500 2012
+Processing by VotesController#create as JS
+  Parameters: {"vote"=>{"post_id"=>"7", "up"=>"false"}}
+  Rendered votes/create.js.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 1.1ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255522748" for 127.0.0.1 at Tue Dec 11 14:52:02 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255522748"}
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (143.2ms)
+  Rendered posts/index.js.erb (147.6ms)
+Completed 200 OK in 152ms (Views: 146.6ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255524749" for 127.0.0.1 at Tue Dec 11 14:52:04 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255524749"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (39.5ms)
+  Rendered posts/index.js.erb (44.4ms)
+Completed 200 OK in 51ms (Views: 43.4ms | ActiveRecord: 2.4ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255525037" for 127.0.0.1 at Tue Dec 11 14:52:05 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255525037"}
+  Rendered chats/_chat.html.erb (8.6ms)
+  Rendered chats/index.js.erb (12.8ms)
+Completed 200 OK in 19ms (Views: 13.2ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255526751" for 127.0.0.1 at Tue Dec 11 14:52:06 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255526751"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (174.0ms)
+  Rendered posts/index.js.erb (178.6ms)
+Completed 200 OK in 183ms (Views: 177.4ms | ActiveRecord: 2.3ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255528753" for 127.0.0.1 at Tue Dec 11 14:52:08 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255528753"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (34.9ms)
+  Rendered posts/index.js.erb (39.5ms)
+Completed 200 OK in 46ms (Views: 39.0ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255530756" for 127.0.0.1 at Tue Dec 11 14:52:10 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255530756"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (35.5ms)
+  Rendered posts/index.js.erb (141.9ms)
+Completed 200 OK in 147ms (Views: 141.3ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255532759" for 127.0.0.1 at Tue Dec 11 14:52:12 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255532759"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (35.4ms)
+  Rendered posts/index.js.erb (39.8ms)
+Completed 200 OK in 45ms (Views: 39.1ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255534762" for 127.0.0.1 at Tue Dec 11 14:52:14 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255534762"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (35.1ms)
+  Rendered posts/index.js.erb (39.5ms)
+Completed 200 OK in 44ms (Views: 38.6ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255535040" for 127.0.0.1 at Tue Dec 11 14:52:15 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255535040"}
+  Rendered chats/_chat.html.erb (8.4ms)
+  Rendered chats/index.js.erb (12.0ms)
+Completed 200 OK in 117ms (Views: 112.8ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255536765" for 127.0.0.1 at Tue Dec 11 14:52:16 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255536765"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.2ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (3.0ms)
+  Rendered posts/_post.html.erb (40.7ms)
+  Rendered posts/index.js.erb (45.1ms)
+Completed 200 OK in 50ms (Views: 44.2ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255538768" for 127.0.0.1 at Tue Dec 11 14:52:18 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255538768"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered posts/_post.html.erb (35.2ms)
+  Rendered posts/index.js.erb (39.9ms)
+Completed 200 OK in 45ms (Views: 39.2ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255540771" for 127.0.0.1 at Tue Dec 11 14:52:20 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255540771"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (103.9ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (136.6ms)
+  Rendered posts/index.js.erb (141.0ms)
+Completed 200 OK in 146ms (Views: 140.0ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255542773" for 127.0.0.1 at Tue Dec 11 14:52:22 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255542773"}
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered shared/_comment_form.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (36.3ms)
+  Rendered posts/index.js.erb (40.9ms)
+Completed 200 OK in 45ms (Views: 40.1ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255544775" for 127.0.0.1 at Tue Dec 11 14:52:24 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255544775"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (139.2ms)
+  Rendered posts/index.js.erb (143.6ms)
+Completed 200 OK in 148ms (Views: 142.6ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255545043" for 127.0.0.1 at Tue Dec 11 14:52:25 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255545043"}
+  Rendered chats/_chat.html.erb (8.5ms)
+  Rendered chats/index.js.erb (12.4ms)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255546777" for 127.0.0.1 at Tue Dec 11 14:52:26 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255546777"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (35.6ms)
+  Rendered posts/index.js.erb (40.1ms)
+Completed 200 OK in 45ms (Views: 39.3ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255548780" for 127.0.0.1 at Tue Dec 11 14:52:28 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255548780"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.9ms)
+  Rendered posts/_post.html.erb (138.3ms)
+  Rendered posts/index.js.erb (143.0ms)
+Completed 200 OK in 148ms (Views: 142.2ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255550781" for 127.0.0.1 at Tue Dec 11 14:52:30 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255550781"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (37.8ms)
+  Rendered posts/index.js.erb (43.1ms)
+Completed 200 OK in 48ms (Views: 42.2ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255552784" for 127.0.0.1 at Tue Dec 11 14:52:32 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255552784"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (35.4ms)
+  Rendered posts/index.js.erb (40.6ms)
+Completed 200 OK in 45ms (Views: 39.9ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255554786" for 127.0.0.1 at Tue Dec 11 14:52:34 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255554786"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (142.3ms)
+  Rendered posts/index.js.erb (148.0ms)
+Completed 200 OK in 153ms (Views: 146.9ms | ActiveRecord: 2.3ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255555045" for 127.0.0.1 at Tue Dec 11 14:52:35 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255555045"}
+  Rendered chats/_chat.html.erb (10.3ms)
+  Rendered chats/index.js.erb (14.5ms)
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 0.8ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255556790" for 127.0.0.1 at Tue Dec 11 14:52:36 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255556790"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (36.8ms)
+  Rendered posts/index.js.erb (41.3ms)
+Completed 200 OK in 46ms (Views: 40.5ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255558792" for 127.0.0.1 at Tue Dec 11 14:52:38 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255558792"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered posts/_post.html.erb (141.1ms)
+  Rendered posts/index.js.erb (145.5ms)
+Completed 200 OK in 150ms (Views: 144.7ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255560795" for 127.0.0.1 at Tue Dec 11 14:52:40 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255560795"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (35.3ms)
+  Rendered posts/index.js.erb (39.7ms)
+Completed 200 OK in 44ms (Views: 38.9ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255562798" for 127.0.0.1 at Tue Dec 11 14:52:42 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255562798"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (101.5ms)
+  Rendered shared/_comment_form.html.erb (104.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (139.5ms)
+  Rendered posts/index.js.erb (143.8ms)
+Completed 200 OK in 148ms (Views: 142.8ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255564803" for 127.0.0.1 at Tue Dec 11 14:52:44 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255564803"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (37.6ms)
+  Rendered posts/index.js.erb (42.2ms)
+Completed 200 OK in 48ms (Views: 41.9ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255565048" for 127.0.0.1 at Tue Dec 11 14:52:45 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255565048"}
+  Rendered chats/_chat.html.erb (8.5ms)
+  Rendered chats/index.js.erb (12.2ms)
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255566805" for 127.0.0.1 at Tue Dec 11 14:52:46 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255566805"}
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (143.7ms)
+  Rendered posts/index.js.erb (148.1ms)
+Completed 200 OK in 152ms (Views: 147.1ms | ActiveRecord: 2.1ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255568807" for 127.0.0.1 at Tue Dec 11 14:52:48 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255568807"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered posts/_post.html.erb (36.3ms)
+  Rendered posts/index.js.erb (41.1ms)
+Completed 200 OK in 46ms (Views: 40.4ms | ActiveRecord: 2.0ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255570810" for 127.0.0.1 at Tue Dec 11 14:52:50 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255570810"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (3.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (51.9ms)
+  Rendered posts/index.js.erb (57.7ms)
+Completed 200 OK in 64ms (Views: 56.4ms | ActiveRecord: 2.5ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255572812" for 127.0.0.1 at Tue Dec 11 14:52:52 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255572812"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.4ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (3.9ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.8ms)
+  Rendered posts/_post.html.erb (49.0ms)
+  Rendered posts/index.js.erb (56.2ms)
+Completed 200 OK in 183ms (Views: 175.0ms | ActiveRecord: 3.4ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255574815" for 127.0.0.1 at Tue Dec 11 14:52:54 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255574815"}
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered posts/_post.html.erb (35.3ms)
+  Rendered posts/index.js.erb (39.6ms)
+Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 1.9ms | Solr: 0.0ms)
+Started GET "/chats.js?turf_id=5&after=2012-12-11%2019:50:18%20UTC&_=1355255575050" for 127.0.0.1 at Tue Dec 11 14:52:55 -0500 2012
+Processing by ChatsController#index as JS
+  Parameters: {"after"=>"2012-12-11 19:50:18 UTC", "turf_id"=>"5", "_"=>"1355255575050"}
+  Rendered chats/_chat.html.erb (8.4ms)
+  Rendered chats/index.js.erb (12.2ms)
+Completed 200 OK in 17ms (Views: 12.7ms | ActiveRecord: 0.7ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255576819" for 127.0.0.1 at Tue Dec 11 14:52:56 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255576819"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.3ms)
+  Rendered posts/_post.html.erb (38.0ms)
+  Rendered posts/index.js.erb (146.1ms)
+Completed 200 OK in 151ms (Views: 144.9ms | ActiveRecord: 2.3ms | Solr: 0.0ms)
+Started GET "/posts.js?turf_id=5&after=2012-12-11%2010:21:36%20UTC&_=1355255578820" for 127.0.0.1 at Tue Dec 11 14:52:58 -0500 2012
+Processing by PostsController#index as JS
+  Parameters: {"after"=>"2012-12-11 10:21:36 UTC", "turf_id"=>"5", "_"=>"1355255578820"}
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_comment_form.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.7ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_comment_form.html.erb (2.6ms)
+  Rendered posts/_post.html.erb (37.6ms)
+  Rendered posts/index.js.erb (42.0ms)
+Completed 200 OK in 46ms (Views: 40.9ms | ActiveRecord: 2.2ms | Solr: 0.0ms)
