@@ -129,14 +129,17 @@ module SessionsHelper
 
       if((distance - radius - Integer(turf.accuracy) - get_location_accuracy)<0)        
       else
-        flash[:error] = "Sorry, you're no longer in range for " + turf.name + " anymore, so you've been removed."
-        if(current_user.following?(turf))
-          current_user.unfollow!(turf)
-        end
+        #backdoor for admin
+        if current_user.email != "admin@turftalk.us"
+          flash[:error] = "Sorry, you're no longer in range for " + turf.name + " anymore, so you've been removed."
+          if(current_user.following?(turf))
+            current_user.unfollow!(turf)
+          end
 
-        #checks if we're in the removed turf right now; if so, sends us back to the home directory
-        if turf == space
-          redirect_to "/users"
+          #checks if we're in the removed turf right now; if so, sends us back to the home directory
+          if turf == space
+            redirect_to "/users"
+          end
         end
       end
     end
@@ -145,16 +148,20 @@ module SessionsHelper
   #very similar to the previous method, but just gives a boolean value of if a user
   # is in range of a given space, without logging out or modifying other spaces
   def silent_in_range(turf)
-    radius = 50
-    
-    distance = haversine_distance(get_location_latitude, get_location_longitude, turf.latitude, turf.longitude)
-
-    if((distance - radius - Integer(turf.accuracy) - get_location_accuracy)<0)        
+    #backdoor for admin
+    if current_user.email == "admin@turftalk.us"
+      flash[:error] = "You're the admin."
       return true
-    else
-      return false
-    end
-    
+    else  
+      radius = 50
+      
+      distance = haversine_distance(get_location_latitude, get_location_longitude, turf.latitude, turf.longitude)
+
+      if((distance - radius - Integer(turf.accuracy) - get_location_accuracy)<0)        
+        return true
+      else
+        return false
+      end    
   end 
 
   #calculates the distance based on the haversine distance
