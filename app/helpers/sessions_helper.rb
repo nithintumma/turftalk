@@ -161,7 +161,8 @@ module SessionsHelper
         return true
       else
         return false
-      end    
+      end
+    end  
   end 
 
   #calculates the distance based on the haversine distance
