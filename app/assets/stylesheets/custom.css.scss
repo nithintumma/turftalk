@@ -489,3 +489,17 @@ aside {
 .success a {color:#264409;}
 .alert a {color:#8a1f11;}
 
+
+#side-tabs a.support {
+  background: url('feedback2.png');
+  left: -15px;
+  top: 250px;
+  height: 110px;
+  width: 58px;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 9999;
+  display:block;
+}
+
