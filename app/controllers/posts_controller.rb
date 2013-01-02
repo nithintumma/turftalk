@@ -41,6 +41,20 @@ class PostsController < ApplicationController
 
   #can be used to destroy a post down the line
   def destroy
+    @post = Post.find(params[:id])
+    
+    @turf = Turf.find_by_id(@post.turf_id)
+    
+    if @post.user_id == current_user.id
+      if @post.destroy
+        flash[:success] = "Post destroyed!" 
+        redirect_to(@turf)     
+      else
+        flash[:error] = "Sorry, post not destroyed"
+      end
+    else
+      flash[:error] = "Sorry, you don't have permission to destroy that post"
+    end
   end
 
   protected

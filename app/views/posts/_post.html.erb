@@ -17,6 +17,12 @@
   </div>
   <div class="timestamp">
     <%= link_to post.user.firstname, post.user, :style => "font-size: 150%;"%> posted (<%= time_ago_in_words(post.created_at) %> ago): 
+
+      <% if post.user_id == current_user.id %>
+
+        <%= link_to "Delete post", post, :method=>:delete, :confirm=>"Are you sure?", :style => "font-style:italic;" %>
+      <% end %>
+
   </div>
   <div class="content" style="margin-left:23px;font-size: 150%;">
     <div class = "pull-left">
