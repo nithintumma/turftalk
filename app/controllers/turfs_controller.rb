@@ -39,7 +39,18 @@ before_filter do
       redirect_to @turf
     else
       @title = "Create New Turf"
-      render 'new'
+      redirect_to "/users"
+
+      #we should definitely fix this long term - this should be in a partial, but i can't get it to work right there
+      initial_error = "Sorry, errors prohibited this turf from being created, including:"
+      errors = [initial_error]
+
+      if @turf.errors.any?    
+        @turf.errors.full_messages.each do |msg|
+          errors << msg
+        end
+        flash[:error] = errors.join("<br/>   - ").html_safe
+      end
     end
   end
   
