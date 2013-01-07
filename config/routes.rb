@@ -30,6 +30,8 @@ Cs50::Application.routes.draw do
 
   get "pages/about"
 
+  get "pages/map"
+
   get "pages/oldabout"
 
   get "users/new"
