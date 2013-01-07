@@ -4,9 +4,10 @@
 
 <% Turf.all.each do |turf| %>
 	<% if turf.latitude == "0" && turf.longitude == "0" %>
-		
+		<% url += "&markers=color:green%7Clabel:#{turf.latitude}%7C#{turf.latitude},#{turf.longitude}" %>
+
 	<% elsif url.length < 2000 %>
-		<% url += "&markers=color:red%7C#{turf.latitude},#{turf.longitude}" %>
+		<% url += "&markers=color:red%7Clabel:#{turf.latitude}%7C#{turf.latitude},#{turf.longitude}" %>
 	<% end %>
 <% end %>
 
