@@ -1,4 +1,6 @@
-<h1>Map - turfs around the world!</h1>
+<h1>
+	<%= "Map - #{Turf.count} turfs around the world (and counting)!" %> 
+</h1>
 
 <% url = "http://maps.googleapis.com/maps/api/staticmap?size=1200x1200&sensor=false&" %>
 
@@ -10,4 +12,6 @@
 	<% end %>
 <% end %>
 
-<%= image_tag url, :class => "img-polaroid"%>
+<div id = "image" style = "margin-left:auto; margin-right:auto; width:650px;">
+	<%= image_tag url, :class => "img-polaroid"%>
+</div>
