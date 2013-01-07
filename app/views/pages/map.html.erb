@@ -3,7 +3,9 @@
 <% url = "http://maps.googleapis.com/maps/api/staticmap?size=1200x1200&sensor=false&" %>
 
 <% Turf.all.each do |turf| %>
-	<% if turf.latitude != 0 && turf.longitude != 0 %>
+	<% if turf.latitude == "0" && turf.longitude == "0" %>
+		
+	<% elsif url.length < 2000 %>
 		<% url += "&markers=color:red%7C#{turf.latitude},#{turf.longitude}" %>
 	<% end %>
 <% end %>
