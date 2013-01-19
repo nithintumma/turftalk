@@ -1,5 +1,10 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
+<% if signed_in? %>
   <div class="navbar-inner" style = "height:47px;">    
+<% else %>
+  <div class="navbar-inner" style = "height:47px;">    
+<% end %>
+
 
     <div class="container-fluid">
       <nav>
@@ -13,19 +18,22 @@
           <% else %>
           
 
-          <li class="divider-vertical"><%= link_to "Home", root_path %></li>
+            <li class="divider-vertical"><%= link_to "Home", root_path %></li>
+
+            <!-- <a class="brand" href= <%=root_path%> style = "margin-top:-17px;"><%= image_tag "logo.png", :size => "240x94" %></a> -->
           
           <% end %>
        </ul>
 
 
-       <ul class="nav pull-right" style = "divider-vertical: 1px solid;">
           <% if signed_in? %>
-          <% $name = "#{@current_user.firstname} #{@current_user.lastname}" %>
-          <li class="divider-vertical"><%= link_to $name, profile_path %></li>
-          <li class="divider-vertical"><%= link_to "Sign out", signout_path, :method => :delete %></li>
+            <ul class="nav pull-right" style = "divider-vertical: 1px solid;">
+            <% $name = "#{@current_user.firstname} #{@current_user.lastname}" %>
+            <li class="divider-vertical"><%= link_to $name, profile_path %></li>
+            <li class="divider-vertical"><%= link_to "Sign out", signout_path, :method => :delete %></li>
           <%else%>
-            <td  style = "pull-left"><%= render "sessions/new"%></td>
+            <ul class="nav pull-right" style = "divider-vertical: 1px solid;">
+            <td  style = "pull-left;"><%= render "sessions/new"%></td>
           <% end %>
        </ul>
       </nav>

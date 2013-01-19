@@ -8,6 +8,7 @@
 	<% if Float(turf.latitude) == 0 && Float(turf.longitude) %>
 	<% elsif url.length < 2000 %>
 		<% url += "&markers=color:red%%7C#{turf.latitude},#{turf.longitude}" %>
+		<% description = turf.name + " at " + turf.latitude + ", " + turf.longitude + "" %>
 
 	<% end %>
 <% end %>

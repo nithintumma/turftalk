@@ -1,0 +1,20 @@
+<% if signed_in?%>
+  <script type="text/javascript">
+    window.location.href="/users"  // put your correct path in a string here
+  </script>
+<% end %>
+
+<div class="homepage">
+  <div class="layer">
+  </div>
+</div>
+<h1 style = "padding-top:80px;"> <a href = "/pages/about" style = "color:#00AA14;padding-top:800px;">Interested? <strong style = "color:#005808;">Click here to learn more</strong> or sign up to the right.</a></h1>
+
+<div class=" hero-unit pull-right" id ="signinsignup" style = "padding-left:25px; margin-right:50px;width:300px; margin-bottom:auto;">  
+	<%= render 'users/new' %>
+</div>
+
+</div>
+
+
+
