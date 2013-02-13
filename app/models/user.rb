@@ -3,8 +3,10 @@ class User < ActiveRecord::Base
   #non-accessible password
   attr_accessor :password
 
+  has_attached_file :avatar, :styles => { :large => "120x120>", :medium => "48x48>", :thumb => "26x26>" }
+
   #publicly accessible and settable attributes
-  attr_accessible :email, :firstname, :lastname, :password, :password_confirmation
+  attr_accessible :email, :firstname, :lastname, :password, :password_confirmation, :avatar
 
   #used to define the many relatinoships between users and turfs
   has_many :relationships, :foreign_key => "follower_id",

@@ -1,0 +1,10 @@
+<%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages' %>
+
+  <%= f.file_field :avatar %>
+  <div class="actions">
+    <%= f.submit "Save Avatar", :class => "btn" %>
+  </div>
+<% end %>
+
+

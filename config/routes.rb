@@ -38,6 +38,8 @@ Cs50::Application.routes.draw do
 
   get "users/new"
 
+  get "users/update"
+
   match '/view', :to =>'users#show'
   match '/signup', :to =>'users#new'
   match '/signin',  :to => 'sessions#new'

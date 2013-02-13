@@ -15,6 +15,12 @@ class UsersController < ApplicationController
 	@title = "Sign Up"
 	@user = User.new
   end
+
+  def update
+    @user = User.find(params[:id])
+    @user.update_attributes(params[:user])
+    redirect_to @user
+  end
   
   #used to display the default page for a logged in user
   #this page displays all of the possible turfs, as well as contains the turf search function
