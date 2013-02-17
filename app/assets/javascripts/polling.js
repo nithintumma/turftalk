@@ -10,7 +10,6 @@ $(function() {
 function updatePosts () {
         var turf_id = $("#current_turf").attr("data-turfid");
         if ($(".post_ind").length > 0) {
-        var after = $(".a_post:first-child").attr("data-time");
         var after_id = $(".a_post:first-child").attr("data-id");
         } else {
         var after = "0";

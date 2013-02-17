@@ -7,13 +7,18 @@
 <div class = "row-fluid centered" style="width:1500px;height:750px;">
 
 	<div class="span6" id = "left">
-	  <div class="hero-unit left userhome" id = "join" style = "overflow:auto;max-height:400px;">
+
+	  <div class="hero-unit left userhome" id = "join" data-refresh = "false" style = "overflow:auto;max-height:400px;">
 			<h1 class = "user-home-header">Join</h1>
-			<%= render 'turfs/joinview' %>		
+			<div id = "join_container">
+				<%= render 'turfs/joinview' %>
+			</div>	
 	  </div>
 	  <div class="hero-unit left userhome" id = "return">
 			<h1 class = "user-home-header">Return</h1>
-			<%= render 'turfs/returnview' %>	
+			<div id = "return_container">
+				<%= render 'turfs/returnview' %>	
+	  		</div>
 	  </div>
 	</div>
 
