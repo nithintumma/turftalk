@@ -18,8 +18,11 @@ class PostsController < ApplicationController
 
   #can be used to refresh posts
   def index
-    @posts = Post.where("turf_id = ? and created_at > ?", params[:turf_id], Time.at(params[:after].to_i + 1000))
-    respond_with(@posts)
+    logger.debug("Part 7")
+    logger.debug(params[:after])
+    @posts = Post.where("turf_id = ? and created_at > ?", params[:turf_id], Time.at(params[:after].to_i + 1))
+    @posts1 = Post.where("turf_id = ? and id > ?", params[:turf_id], params[:after])
+    respond_with(@posts1)
   end
 
   #creates and attempts to save a new post based on a user and a turf id value passed in
