@@ -1,10 +1,10 @@
 <%= form_for @chat, :remote => true do |f| %>
   <%= render 'shared/error_messages', :object => f.object %>
   <div><%= f.hidden_field :turf_id_value, :value => @turf.id %></div>
-  <div class="field">
-    <%= f.text_field :content, :placeholder => "Chat something here!", :class => "comment-input" %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Submit" %>
-  </div>
+
+  <%= f.text_field :content, :placeholder => "Chat something here!", :class => "comment-input", :style => "margin-top:8px;" %>
+
+  <%= f.submit "Send", :name => nil, :class=>"btn", :style => "display:inline-block;height:30px;padding:5px;" %>
+  
+  
 <% end %>
