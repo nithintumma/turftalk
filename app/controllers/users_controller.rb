@@ -18,11 +18,15 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    @user.update_attribute(:avatar, params[:user][:avatar])
-    #@user.assign_attributes(params[:user], :without_protection => true)
-    #@user.save
-    #flash[:success] = params[:user]
-    redirect_to @user
+    if params.has_key?(:user) && params[:user].has_key?(:avatar)    
+      @user.update_attribute(:avatar, params[:user][:avatar])
+      flash[:success] = "Your avatar has been updated!"
+      redirect_to "/profile"
+    else
+      flash[:alert] = "Sorry, you didn't select any file to attach for your avatar."
+      redirect_to "/profile"
+    end
+    
   end
   
   #used to display the default page for a logged in user
