@@ -129,8 +129,8 @@ module SessionsHelper
 
       if((distance - radius - Integer(turf.accuracy) - get_location_accuracy)<0)        
       else
-        #backdoor for admin
-        if current_user.email != "admin@turftalk.us"
+        #backdoor for admin or demo turf (which has id of 19 or 23 on local or server respectively)
+        if !(current_user.email == "admin@turftalk.us" || (turf.name == "Demonstration Turf" && (turf.id == 19 || turf.id == 23)))
           flash[:error] = "Sorry, you're no longer in range for " + turf.name + " anymore, so you've been removed."
           if(current_user.following?(turf))
             current_user.unfollow!(turf)
@@ -152,7 +152,9 @@ module SessionsHelper
     if current_user.email == "admin@turftalk.us"
       flash[:error] = "You're the admin."
       return true
-    else  
+    elsif turf.name == "Demonstration Turf" && (turf.id == 19 || turf.id == 23)
+      return true
+    else
       radius = 50
       
       distance = haversine_distance(get_location_latitude, get_location_longitude, turf.latitude, turf.longitude)

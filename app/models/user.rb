@@ -3,7 +3,8 @@ class User < ActiveRecord::Base
   #non-accessible password
   attr_accessor :password
 
-  has_attached_file :avatar, :styles => { :large => "120x120>", :medium => "48x48>", :thumb => "26x26>" }
+  #has_attached_file :avatar, :styles => { :large => "120x120>", :medium => "48x48>", :thumb => "26x26>" }
+  has_attached_file :avatar, :styles => {:small => "65x65#", :thumb => "35x35#"}
 
   #publicly accessible and settable attributes
   attr_accessible :email, :firstname, :lastname, :password, :password_confirmation, :avatar
@@ -39,7 +40,7 @@ class User < ActiveRecord::Base
                        :confirmation => true,
                        :length       => { :within => 6..40 }
 
-  before_save :encrypt_password
+  before_save :encrypt_password, :unless => "password.blank?"
 
   #checks if they supply the right password
   def has_password?(submitted_password)
@@ -78,8 +79,10 @@ class User < ActiveRecord::Base
 
     #encryptys password
     def encrypt_password
-      self.salt = make_salt if new_record?
-      self.encrypted_password = encrypt(password)
+      if(password != "")      
+        self.salt = make_salt if new_record?
+        self.encrypted_password = encrypt(password)
+      end
     end
 
     #encrypts a given string based on a hash

@@ -34,4 +34,7 @@ Cs50::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  Paperclip.options[:image_magick_path] = "/usr/local/bin/"
+
 end

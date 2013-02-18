@@ -25,7 +25,7 @@
       <div class="row-fluid">
         <div class="span3" style="margin-right:5px;margin-left:5px;">
           <div class = "hero-unit post-form" style = "height:240px">        
-              <%= image_tag "jamessmall.jpg", :class => "img-polaroid"%>
+              <%= render "users/smallpic", :user => current_user %>
               <a href="/profile"><%=current_user.firstname%> <%=current_user.lastname%></a>
               <% @temp = @post %>
               <%= render 'shared/post_form' %>

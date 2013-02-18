@@ -12,7 +12,8 @@ gem 'sunspot_rails', '~> 1.3.0'
 gem 'twitter-bootstrap-rails'
 gem 'libv8', '~> 3.11.8'
 gem 'geocoder'
-gem 'paperclip', '2.7.0'
+gem 'paperclip'
+gem 'rmagick'
 
 group :development do
   gem 'sqlite3', '1.3.6'

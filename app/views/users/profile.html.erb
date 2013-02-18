@@ -5,8 +5,7 @@
   <div class="span8 hero-unit pull-left profile-units">
     <h1>You</h1>
     <div class = "name_display">
-      <%= image_tag "jamessmall.jpg" , :class => "img-polaroid" %>
-
+      <%= render "smallpic", :user => @user %>
       First name: <strong><%= @user.firstname %></strong>
       
       Last name: <strong><%= @user.lastname %></strong>      

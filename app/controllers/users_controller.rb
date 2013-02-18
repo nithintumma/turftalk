@@ -18,7 +18,10 @@ class UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
-    @user.update_attributes(params[:user])
+    @user.update_attribute(:avatar, params[:user][:avatar])
+    #@user.assign_attributes(params[:user], :without_protection => true)
+    #@user.save
+    #flash[:success] = params[:user]
     redirect_to @user
   end
   

@@ -1,0 +1,6 @@
+
+<% if user.avatar?%>
+	<%= image_tag user.avatar.url(:thumb), :class => "img-polaroid" %>
+<% else %>
+	<%= image_tag "thumb.png", :class => "img-polaroid" %>
+<% end %>

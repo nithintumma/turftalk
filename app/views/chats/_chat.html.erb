@@ -9,12 +9,12 @@
 	  </span>
   </div>
 
-  <div class = "pull-left" style = "margin-right:10px;">
-    <%= image_tag "jamesverysmall.jpg", :class => "img-polaroid"%>
+  <div class = "pull-left" style = "margin-right:10px; display:inline;">
+    <%= render "users/thumbpic", :user => chat.user %>
   </div>
   
-  <div class = "pull-left" style = "display:inline-block">
-    <span><%=chat.content %></span>
+  <div style = "display:inline;width:80%;">
+    <%=chat.content %>
   </div>
   
 

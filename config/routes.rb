@@ -37,7 +37,6 @@ Cs50::Application.routes.draw do
   get "pages/oldabout"
 
   get "users/new"
-
   get "users/update"
 
   match '/view', :to =>'users#show'
