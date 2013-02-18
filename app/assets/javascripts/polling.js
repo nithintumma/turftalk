@@ -22,10 +22,10 @@ function updatePosts () {
 function updateChats() {
         var turf_id = $("#current_turf").attr("data-turfid");
         if ($(".chat-container").length > 0) {
-        var after = $(".a_chat:last-child").attr("data-time");
+        var after_id = $(".a_chat:last-child").attr("data-id");
         } else {
         var after = "0";
         }
-        $.getScript("/chats.js?turf_id=" + turf_id + "&after=" + after)
+        $.getScript("/chats.js?turf_id=" + turf_id + "&after=" + after_id)
         setTimeout(updateChats, 20000);
 }

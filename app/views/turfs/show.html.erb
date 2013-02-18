@@ -58,7 +58,9 @@
       <% if @turf.chats.any? %>
         <div class = "chat-container" style = "overflow:scroll; height:371px;">
           <ol class="chats">
+            <div id = "chats-container">
             <%= render @chats.reverse %>
+          </div>
           </ol>
         </div>
       <%else %>

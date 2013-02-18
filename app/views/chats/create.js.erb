@@ -1,3 +1,3 @@
-$(".chat-container").append("<%= escape_javascript(render(@chat)) %>");
+$("#chats-container").append("<%= escape_javascript(render(@chat)) %>");
 $("#chat_content").val("");
 $(".chat-container").scrollTop($(".chat-container")[0].scrollHeight);
