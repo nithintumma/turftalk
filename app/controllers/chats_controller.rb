@@ -15,7 +15,7 @@ class ChatsController < ApplicationController
 
   #blank, but can be filled with functions for chat (such as search)
   def index
-    @chats = Chat.where("turf_id = ? and created_at > ?", params[:turf_id], Time.at(params[:after].to_i + 1))
+    @chats = Chat.where("turf_id = ? and id > ?", params[:turf_id], params[:after])
     respond_with(@chats)
   end
 

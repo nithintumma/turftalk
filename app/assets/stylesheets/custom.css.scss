@@ -16,8 +16,9 @@ body#homepagebackground {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: #94C5EB
+  background-color: #94C5EB;
 }
+
 body#homepage2background {
   padding-top: 60px;
   
@@ -26,17 +27,14 @@ body#homepage2background {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: #94C5EB
+  background-color: #94C5EB;
 }
 body {
-  padding-top: 60px;
-  
-  background: url('grasshills.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-opacity: 0.5;
+
+ background:URL('hills.jpg') repeat-x fixed;
+
+background-color:#3BB123;
+ padding-top:60px;
 }
 
 .navbar{
@@ -519,9 +517,9 @@ aside {
 
 #side-tabs a.support {
   background: url('feedback2.png');
-  left: -15px;
+  left: -12px;
   top: 250px;
-  height: 110px;
+  height: 113px;
   width: 58px;
   margin: 0;
   padding: 0;
@@ -529,6 +527,10 @@ aside {
   z-index: 9999;
   display:block;
 }
+
+#side-tabs a.support:hover {
+  left:-7px;
+  }
 
 .bs-docs-sidenav {
   width: 228px;
