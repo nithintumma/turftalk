@@ -1,5 +1,9 @@
 <footer class="footer">
-  <small style = "color:#FFF;opacity:0.7;">
-    Developed by James Ruben, Nithin Tumma, and Neel Patel. Logo by Susan Bin. Feedback? Email us.
-  </small>
+  <div style = "color:#FFF;size:150%;">
+  	<% if url_for(:only_path => true) == "/"%>
+    	Developed by James Ruben, Nithin Tumma, and Neel Patel. Logo by Susan Bin.    
+	<% else %>
+		Developed by James Ruben, Nithin Tumma, and Neel Patel.   
+	<% end %>
+  </div>
 </footer>

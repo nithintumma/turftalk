@@ -2,7 +2,8 @@
 
 /* universal */
 
-html {
+html {  
+
   overflow-y: scroll;
   overflow-x: scroll;
   font-family:"Avenir"
@@ -30,11 +31,11 @@ body#homepage2background {
   background-color: #94C5EB;
 }
 body {
+  
+  background:URL('hills.jpg') repeat-x fixed;
+  background-color:#3BB123;
+  padding-top:60px;
 
- background:URL('hills.jpg') repeat-x fixed;
-
-background-color:#3BB123;
- padding-top:60px;
 }
 
 .navbar{

@@ -5,7 +5,7 @@
       <a class="btn btn-large return-button" href = <%=url_for turf_path(turf)%> >
       <div class="left pull-left" style = "text-align:left">
         <td><b><div style = "font-size:130%;"><b><%= turf.name %></b></div></b></td> </br>
-        <td><i> (<%= turf.followers.count %> followers) </i></td>
+        <td><i> <%= pluralize(turf.followers.count, "member") %> </i></td>
 
       </div>
       

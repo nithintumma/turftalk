@@ -11,7 +11,7 @@
       <h2>
       Located in <strong> <%= @turf.location %>.</strong>
       This space is <strong> <%= @turf.description %>.</strong></br></h2>
-      <h2 style = "display:inline-block;margin-right:50px;"> <%= pluralize(@turf.followers.count, "follower") %> </h2>
+      <h2 style = "display:inline-block;margin-right:50px;"> <%= pluralize(@turf.followers.count, "member") %> </h2>
       
       <%= render 'follow_form' if signed_in? %>
     </div>

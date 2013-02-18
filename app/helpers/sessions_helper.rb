@@ -129,8 +129,8 @@ module SessionsHelper
 
       if((distance - radius - Integer(turf.accuracy) - get_location_accuracy)<0)        
       else
-        #backdoor for admin or demo turf (which has id of 19 or 23 on local or server respectively)
-        if !(current_user.email == "admin@turftalk.us" || (turf.name == "Demonstration Turf" && (turf.id == 19 || turf.id == 23)))
+        #backdoor for admin or demo turf (which has id of 19 or 23 on local or server or local production respectively)
+        if !(current_user.email == "admin@turftalk.us" || (turf.name == "Demonstration Turf" && (turf.id == 19 || turf.id == 23 || turf.id == 9)))
           flash[:error] = "Sorry, you're no longer in range for " + turf.name + " anymore, so you've been removed."
           if(current_user.following?(turf))
             current_user.unfollow!(turf)
