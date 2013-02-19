@@ -14,6 +14,13 @@
       <h2 style = "display:inline-block;margin-right:50px;"> <%= pluralize(@turf.followers.count, "member") %> </h2>
       
       <%= render 'follow_form' if signed_in? %>
+      
+      <% if current_user.email == "admin@turftalk.us"%>              
+        <h2 style = "display:inline-block;margin-left:50px;">
+          <%= link_to "Delete turf as admin", @turf, :method=>:delete, :confirm=>"Are you sure?", :style => "font-style:italic;" %>
+        </h2>
+      <% end %>
+
     </div>
     </td>
     </tr>

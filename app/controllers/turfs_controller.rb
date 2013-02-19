@@ -53,6 +53,21 @@ before_filter do
       end
     end
   end
+
+  def destroy
+    @turf = Turf.find(params[:id])
+        
+    if current_user.email == "admin@turftalk.us"
+      if @turf.destroy
+        flash[:success] = "Turf destroyed!" 
+        redirect_to("/")     
+      else
+        flash[:error] = "Sorry, turf not destroyed"
+      end
+    else
+      flash[:error] = "Sorry, you don't have permission to destroy that turf."
+    end
+  end
   
   #the compliment to the user "following" function, delineating the user-turf relationshiop
   #this shows the users currently in a turf

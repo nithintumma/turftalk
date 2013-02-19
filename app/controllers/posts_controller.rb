@@ -48,7 +48,7 @@ class PostsController < ApplicationController
     
     @turf = Turf.find_by_id(@post.turf_id)
     
-    if @post.user_id == current_user.id
+    if @post.user_id == current_user.id || current_user.email == "admin@turftalk.us"
       if @post.destroy
         flash[:success] = "Post destroyed!" 
         redirect_to(@turf)     
@@ -56,7 +56,7 @@ class PostsController < ApplicationController
         flash[:error] = "Sorry, post not destroyed"
       end
     else
-      flash[:error] = "Sorry, you don't have permission to destroy that post"
+      flash[:error] = "Sorry, you don't have permission to destroy that post."
     end
   end
 

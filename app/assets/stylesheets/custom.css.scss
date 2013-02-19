@@ -33,7 +33,7 @@ body#homepage2background {
 body {
   
   background:URL('hills.jpg') repeat-x fixed;
-  background-color:#3BB123;
+  background-color:#00BE24;
   padding-top:60px;
 
 }
@@ -604,4 +604,8 @@ aside {
   position: absolute;
   top: auto;
   bottom: 270px;
+}
+
+.caption {
+  font-size:500%;
 }
